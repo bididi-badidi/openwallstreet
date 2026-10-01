@@ -1,0 +1,118 @@
+{
+  "start_year": 2000,
+  "end_fiscal_year": 2027,
+  "as_of": "2026-09-30",
+  "parallelism": 2,
+  "scope_note": "Fiscal 2027 included to discover issuers whose fiscal-year naming runs ahead of calendar year. Future/unpublished reports must not be inferred missing. Listing year requires period-level review.",
+  "issuers": [
+    {
+      "id": "apple",
+      "company": "Apple Inc.",
+      "aliases": [
+        "Apple Computer, Inc.",
+        "AAPL"
+      ],
+      "listing_date": "1980-12-12",
+      "listing_source": "https://investor.apple.com/faq/",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "investor.apple.com",
+        "www.apple.com"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "company": "Microsoft Corporation",
+      "aliases": [
+        "MSFT"
+      ],
+      "listing_date": "1986-03-13",
+      "listing_source": "https://www.microsoft.com/en-us/investor/faq",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "www.microsoft.com"
+      ]
+    },
+    {
+      "id": "alphabet",
+      "company": "Alphabet Inc.",
+      "aliases": [
+        "Google Inc.",
+        "GOOG",
+        "GOOGL"
+      ],
+      "listing_date": "2004-08-19",
+      "listing_source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "abc.xyz",
+        "www.abc.xyz",
+        "investor.google.com",
+        "s206.q4cdn.com"
+      ]
+    },
+    {
+      "id": "amazon",
+      "company": "Amazon.com, Inc.",
+      "aliases": [
+        "AMZN"
+      ],
+      "listing_date": "1997-05-15",
+      "listing_source": "https://ir.aboutamazon.com/faqs/",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "ir.aboutamazon.com"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "company": "NVIDIA Corporation",
+      "aliases": [
+        "NVDA"
+      ],
+      "listing_date": "1999-01-22",
+      "listing_source": "https://investor.nvidia.com/investor-resources/faqs/default.aspx",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "investor.nvidia.com",
+        "s201.q4cdn.com"
+      ]
+    },
+    {
+      "id": "meta",
+      "company": "Meta Platforms, Inc.",
+      "aliases": [
+        "Facebook, Inc.",
+        "FB",
+        "META"
+      ],
+      "listing_date": "2012-05-18",
+      "listing_source": "https://investor.atmeta.com/investor-news/press-release-details/2012/Facebook-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "investor.atmeta.com"
+      ]
+    },
+    {
+      "id": "tesla",
+      "company": "Tesla, Inc.",
+      "aliases": [
+        "Tesla Motors, Inc.",
+        "TSLA"
+      ],
+      "listing_date": "2010-06-29",
+      "listing_source": "https://ir.tesla.com/node/16",
+      "listing_date_status": "primary_source_checked_2026-09-30",
+      "primary_hosts": [
+        "www.sec.gov",
+        "ir.tesla.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "company": "Alphabet Inc.",
+  "aliases": ["Google Inc.", "GOOG", "GOOGL"],
+  "as_of": "2026-09-30",
+  "parallelism": 2,
+  "max_documents_per_report": 1,
+  "max_chunks_per_document": 8,
+  "primary_hosts": ["abc.xyz", "www.sec.gov", "s206.q4cdn.com"],
+  "user_agent": "ManagementEvidenceResearch/1.0",
+  "reports": [
+    {
+      "report_type": "annual",
+      "fiscal_year": 2025,
+      "period_end": "2025-12-31",
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf"
+    },
+    {"report_type": "annual", "fiscal_year": 2023, "period_end": "2023-12-31"},
+    {"report_type": "annual", "fiscal_year": 2022, "period_end": "2022-12-31"},
+    {"report_type": "annual", "fiscal_year": 2021, "period_end": "2021-12-31"}
+  ],
+  "seed_sources": [
+    {
+      "url": "https://abc.xyz/investor/annual-meeting/",
+      "purpose": "Issuer annual-report listing; current 2025 report linked here. Older annual reports require issuer/regulator discovery. Meeting date is not assumed to be report publication date."
+    },
+    {
+      "url": "https://abc.xyz/investor/earnings/",
+      "purpose": "Issuer historical financial-results listing."
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf",
+      "identity": "Alphabet 2025 Annual Report, issuer-linked PDF",
+      "linked_from": "https://abc.xyz/investor/annual-meeting/",
+      "verified_link_date": "2026-09-30"
+    }
+  ]
+}

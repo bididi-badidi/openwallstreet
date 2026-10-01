@@ -1,0 +1,46 @@
+{
+  "company": "Alphabet Inc.",
+  "aliases": [
+    "Google Inc.",
+    "GOOG",
+    "GOOGL"
+  ],
+  "as_of": "2026-09-30",
+  "parallelism": 1,
+  "max_documents_per_report": 1,
+  "max_chunks_per_document": 8,
+  "primary_hosts": [
+    "abc.xyz",
+    "www.sec.gov",
+    "s206.q4cdn.com"
+  ],
+  "user_agent": "ManagementEvidenceResearch/1.0",
+  "reports": [
+    {
+      "report_type": "annual",
+      "fiscal_year": 2023,
+      "period_end": "2023-12-31",
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog023-alphabet-2023-annual-report-web-1.pdf"
+    },
+    {
+      "report_type": "annual",
+      "fiscal_year": 2022,
+      "period_end": "2022-12-31",
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2022/q4/goog-10-k-q4-2022.pdf"
+    }
+  ],
+  "seed_sources": [
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog023-alphabet-2023-annual-report-web-1.pdf",
+      "linked_from": "https://abc.xyz/investor/earnings/",
+      "identity": "Alphabet FY2023 annual report; link observed on issuer listing",
+      "verified_link_date": "2026-09-30"
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2022/q4/goog-10-k-q4-2022.pdf",
+      "linked_from": "https://abc.xyz/investor/earnings/",
+      "identity": "Alphabet FY2022 annual report; link observed on issuer listing",
+      "verified_link_date": "2026-09-30"
+    }
+  ]
+}

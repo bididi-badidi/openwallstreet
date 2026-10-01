@@ -1,0 +1,11 @@
+{
+  "company": "FICTIONAL Example Company",
+  "reports": [
+    {"report_type": "annual", "period_end": "2025-12-31"},
+    {"report_type": "quarterly", "period_end": "2026-03-31"}
+  ],
+  "primary_hosts": ["reports.example.invalid"],
+  "parallelism": 2,
+  "max_documents_per_report": 3,
+  "user_agent": "ManagementEvidenceResearch/1.0"
+}

@@ -1,0 +1,46 @@
+{
+  "company": "Alphabet Inc.",
+  "aliases": [
+    "Google Inc.",
+    "GOOG",
+    "GOOGL"
+  ],
+  "as_of": "2026-09-30",
+  "parallelism": 1,
+  "max_documents_per_report": 1,
+  "primary_hosts": [
+    "s206.q4cdn.com",
+    "abc.xyz",
+    "www.sec.gov"
+  ],
+  "user_agent": "ManagementEvidenceResearch/1.0",
+  "reports": [
+    {
+      "report_type": "annual",
+      "period_end": "2024-12-31",
+      "fiscal_year": 2024,
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_downloads/annualreport2024-web.pdf",
+      "source_identity": "SEC Form 10-K, accession 0001652044-25-000014",
+      "source_period_of_report": "2024-12-31",
+      "source_filing_date": "2025-02-05",
+      "source_mda_section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+    }
+  ],
+  "seed_sources": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/goog-20241231.htm",
+      "host": "www.sec.gov",
+      "document_identity": "SEC Form 10-K, accession 0001652044-25-000014",
+      "report_type": "annual",
+      "period_end": "2024-12-31",
+      "publication_date": "2025-02-05",
+      "evidence": "SEC filing index identifies the document as Form 10-K, gives filing date 2025-02-05 and period of report 2024-12-31. The report table of contents identifies Item 7 MD&A on page 30."
+    },
+    {
+      "url": "https://s206.q4cdn.com/479360582/files/doc_downloads/annualreport2024-web.pdf",
+      "identity": "Alphabet 2024 Annual Report, issuer-linked PDF",
+      "linked_from": "https://abc.xyz/investor/annual-meeting/",
+      "publication_date": "2025-04-25"
+    }
+  ]
+}

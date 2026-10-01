@@ -1,0 +1,1434 @@
+{
+  "schema_version": 1,
+  "company": "Alphabet Inc.",
+  "scope": {
+    "evidence_file": "data/live-alphabet-2024/evidence.json",
+    "evidence_sha256": "0580461ab1062107c7c45535f27d0be36adab4db36980c176c55795ef2fb9747",
+    "prior_ledger": "data/derived/alphabet-ledger-v1/ledger.json",
+    "prior_ledger_sha256": "901aa3bd31efc013a3964bb80078e064871e6ae1b7add90f976e5efcebeafab7",
+    "selection": "Exactly the 66 prior coverage.uncurated_refs; FY2024 annual report and April 2025 CEO letter only.",
+    "review_basis": "Read full saved extraction quotations, verified all 66 as exact substrings of their saved physical pages; consulted full pages for ambiguous scope, referents, dates and unsupported summaries. Offline automated proposal; no human sign-off or delivery verdicts.",
+    "date_policy": "Container publication and fiscal period are not statement dates. Null means unsupported or unreviewed. Human-readable future windows are proposals, not normalized deadlines or completed events.",
+    "attribution_policy": "Company outcomes remain company outcomes. No individual attribution or collective board choice is inferred from a financial result.",
+    "compound_record_policy": "Each claim is assigned exactly once. Mixed deliverables/metrics within a source record remain explicitly flagged review bundles and require separate normalized entries before ledger matching.",
+    "coverage": {
+      "remaining_claims": 66,
+      "groups": 65,
+      "exact_saved_quotation_checks": 66
+    },
+    "immutability": "Original evidence, existing v1 entries and raw summaries are unchanged; this file is a separate proposed inventory."
+  },
+  "review_status": "proposed",
+  "groups": [
+    {
+      "id": "backbone-network-scale",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Network spans over 200 countries/territories and over two million miles of terrestrial and subsea cable.",
+      "claim_ids": [
+        "b331e5e88e13b3aa416e2543d60607f6db97ffae67113018027846b23179cf3d"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Infrastructure scale does not establish investment returns, resilience achieved, or a dated completion."
+      ],
+      "materiality_reason": "Context for the infrastructure investment strategy.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "gemini-and-maps-adoption",
+      "kind": "outcome",
+      "dimension": "delivery_credibility",
+      "summary": "CEO reports Gemini across 15 products with half a billion users; Maps became the seventh product to reach two billion users in the preceding year.",
+      "claim_ids": [
+        "49c1945a9a952c3255bcf822726b9c6ad4928ac3e72cd40eb48b5ee23b539848"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": "Maps milestone: 2024, inferred from letter wording last year; exact date unknown",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Mixed product scopes and user metrics; do not add the counts or infer revenue.",
+        "Maps milestone and Gemini adoption require separate normalized entries before matching; exact measurement dates are absent."
+      ],
+      "materiality_reason": "Material product adoption claims require definitions and comparable follow-up.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "ai-overviews-reach",
+      "kind": "outcome",
+      "dimension": "delivery_credibility",
+      "summary": "CEO reports AI Overviews reaching one billion people and greater return to Search among users engaging with Overviews.",
+      "claim_ids": [
+        "4b9c1d33a8c4d5a063ef15ae2582875fb3484aba1783d0ea52ae379aadc7e075"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Reach period, counting method and engagement comparison are unspecified.",
+        "Reach and engagement do not establish monetization or profitability."
+      ],
+      "materiality_reason": "Large-scale AI distribution claim.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "gemini-developer-adoption",
+      "kind": "outcome",
+      "dimension": "delivery_credibility",
+      "summary": "CEO reports over four million developers using Gemini models, including Gemma 3.",
+      "claim_ids": [
+        "e22d5c439143ee6882280906568cc2135766f32b213ef8db6fa63f485f99626d"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Developer activity definition, counting window, GPU performance benchmark and financial benefit are unspecified."
+      ],
+      "materiality_reason": "Developer ecosystem scale claim.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "consumer-subscriptions-and-device-scale",
+      "kind": "outcome",
+      "dimension": "delivery_credibility",
+      "summary": "CEO reports over 125 million YouTube Music/Premium subscriptions, one billion monthly podcast users, over three billion active Android devices, and over 200 million Google One/YouTube subscribers collectively.",
+      "claim_ids": [
+        "62f8bba6ab9b6491cd0b6ed6daaac4168e6dcbfe7f84fb230b523be4459fb4e0"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Distinct products, subscriptions, users and devices; mixed metrics cannot form one delivery comparison.",
+        "Counts may overlap; do not sum them. Subscription counting and active-device windows are unspecified.",
+        "US streaming rank lacks methodology in this excerpt."
+      ],
+      "materiality_reason": "Material consumer adoption and subscriptions context.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "waymo-paid-rides",
+      "kind": "outcome",
+      "dimension": "delivery_credibility",
+      "summary": "CEO reports Waymo serving over 200,000 paid rides weekly while expanding to new cities.",
+      "claim_ids": [
+        "6a5e2819207428c7342b63651e16006de887f62e16352d636233b285beedfb50"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": "April 2025 (CEO letter; month precision)",
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "The week, geographic scope and counting methodology are unspecified; no profitability claim follows.",
+        "Calico, Wing and Isomorphic Labs opportunities are qualitative ancillary context, not proven commercial results."
+      ],
+      "materiality_reason": "Evidence of paid autonomous-driving adoption.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "five-year-rd-spending",
+      "kind": "outcome",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet reports over $150 billion invested in R&D over the last five years.",
+      "claim_ids": [
+        "b88bc7f85c4e723cebaa4b0bccd3c7b83648060412991d86283961be918f5003"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "Last five years (raw phrase; exact interval unreviewed)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Rolling five-year boundaries are not explicit in the excerpt; normalize only after review.",
+        "Spending is an input, not proof of innovation delivery or returns."
+      ],
+      "materiality_reason": "Large cumulative allocation of capital.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "responsible-ai-ambition",
+      "kind": "context",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet aims to build the most advanced, safe and responsible AI using its full technology stack.",
+      "claim_ids": [
+        "6954f00868fe67045f9db5bc4fb0fe98a24d0122376f3896757da7700c3d3075"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Superlatives and safety criteria lack measurable thresholds and deadlines; do not treat this ambition as a delivery denominator."
+      ],
+      "materiality_reason": "Accountability context for AI strategy.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "other-bets-business-ambition",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet states a goal for Other Bets to become thriving, successful businesses.",
+      "claim_ids": [
+        "1459f323fe5b647467f510879fa9b3c8926e1bc9f68cea6a1dc6ec8598699395"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Success criteria, entity-level targets and deadlines are absent; do not infer a measurable promise."
+      ],
+      "materiality_reason": "Sets strategic context for Other Bets losses and funding.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "product-enabled-emissions-aspiration",
+      "kind": "conditional_intention",
+      "dimension": "delivery_credibility",
+      "summary": "Alphabet aspires to help partners collectively reduce one gigaton of carbon-equivalent emissions annually by 2030 through its products.",
+      "claim_ids": [
+        "a1fd79c1a28ede20af106f4c008349530840eb6680b372c047859e0840d7d061"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "Annual rate by 2030; measurement window unreviewed",
+        "target_deadline": "2030 (year precision; exact deadline unreviewed)"
+      },
+      "limitations": [
+        "Explicit aspiration; provisional classification must not silently turn it into an unconditional promise.",
+        "Avoided emissions from product use are distinct from Alphabet operational/value-chain emissions; attribution, baseline and measurement methodology are absent."
+      ],
+      "materiality_reason": "Quantified public environmental ambition.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "net-zero-2030-goal",
+      "kind": "promise",
+      "dimension": "delivery_credibility",
+      "summary": "Alphabet reports a goal set in 2021 to reach net-zero emissions across operations and its value chain by 2030.",
+      "claim_ids": [
+        "2e582a1b33a605e53429cdc23259e6b20ba19483c92bb71ee1af2c5fea15dec3"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "2021 goal-setting (year precision; original source absent)",
+        "measurement_period": null,
+        "target_deadline": "2030 (year precision; exact deadline unreviewed)"
+      },
+      "limitations": [
+        "Promise is a proposed classification of a public dated goal, not semantic approval.",
+        "This report repeats a historical goal; original 2021 wording and disclosure must be collected.",
+        "Gross emissions reduction, removals and net-zero accounting need distinct definitions; no outcome supplied."
+      ],
+      "materiality_reason": "Material long-term public commitment.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "absolute-emissions-reduction-goal",
+      "kind": "promise",
+      "dimension": "delivery_credibility",
+      "summary": "Alphabet aims to cut combined Scope 1, market-based Scope 2 and Scope 3 absolute emissions 50% versus 2019 by 2030, with removals planned for residual emissions.",
+      "claim_ids": [
+        "a61c16253aa3f8fbe181b88d2d3d85899012def6a7946c6d1a69fc7f3b09ed40"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "2030 target compared with 2019 base year; exact intervals unreviewed",
+        "target_deadline": "2030 (year precision; exact deadline unreviewed)"
+      },
+      "limitations": [
+        "Promise classification is proposed; original statement date and measurement conventions require review.",
+        "Separate the quantified gross-reduction target from the qualitative removals plan before ledger matching.",
+        "This is not the same metric as product-enabled avoided emissions or 24/7 carbon-free energy."
+      ],
+      "materiality_reason": "Quantified emissions target with an explicit baseline.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "carbon-free-energy-goal",
+      "kind": "promise",
+      "dimension": "delivery_credibility",
+      "summary": "Alphabet reports a 2020 goal to operate on carbon-free energy every hour on every operating grid by 2030.",
+      "claim_ids": [
+        "95b651d0480bc3a85b1fd3f1e9229418e613080ff1f0e430c729d34e53cff71d"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "2020 goal-setting (year precision; original source absent)",
+        "measurement_period": null,
+        "target_deadline": "2030 (year precision; exact deadline unreviewed)"
+      },
+      "limitations": [
+        "Promise classification is proposed; original 2020 disclosure is absent.",
+        "Hourly and grid coverage methodology is needed; annual renewable matching would not establish this goal."
+      ],
+      "materiality_reason": "Specific infrastructure-related environmental commitment.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "emissions-rise-before-decline",
+      "kind": "forecast",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet expects total greenhouse-gas emissions to rise before declining toward its absolute-reduction target.",
+      "claim_ids": [
+        "a8b657ab46265118613166aed99747228a51c9cc03b00eea6cee58be51fa2fcd"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No peak magnitude, timing or decline path is provided; retain alongside climate goals, not as evidence of withdrawal or an achieved outcome."
+      ],
+      "materiality_reason": "Adverse qualification of the climate delivery pathway.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "climate-execution-difficulty",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet describes its net-zero and 24/7 carbon-free-energy goals as extremely ambitious and the path as difficult and nonlinear.",
+      "claim_ids": [
+        "825daa2a971b1ab019ceb3b4dfa1f379176e246f2fe872ad75b91767e3003710"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Execution caveat does not withdraw the targets or prove a miss; full page adds uncertainty about AI impacts and technology availability."
+      ],
+      "materiality_reason": "Material disclosed uncertainty about long-term targets.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "advertising-revenue-concentration",
+      "kind": "context",
+      "dimension": "operating_efficiency",
+      "summary": "More than 75% of FY2024 revenue came from online advertising.",
+      "claim_ids": [
+        "9e5c1817a996f4820bacbfe45cb530a1bcea0097b0bd9af548e608e3be39274a"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 (2024-01-01 through 2024-12-31)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Revenue concentration is not an operating-efficiency or profitability measure by itself."
+      ],
+      "materiality_reason": "Material reliance on advertising economics.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "international-revenue-share",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "International revenue represented approximately 51% of consolidated FY2024 revenue.",
+      "claim_ids": [
+        "5aac686412a7b3a39c75142fd70fa548c8d2d471022c220e39a058687067269e"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 (2024-01-01 through 2024-12-31)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Geographic revenue exposure is not currency exposure or proof of diversification benefits; preserve customer-address geography definitions."
+      ],
+      "materiality_reason": "Context for foreign-exchange and geographic risk.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "ai-competition-investment-risk",
+      "kind": "challenge",
+      "dimension": "capital_stewardship",
+      "summary": "AI is highly competitive and rapidly evolving, requiring significant infrastructure, development and operating investment.",
+      "claim_ids": [
+        "beff65ebe1f209ab37dd5223aa984dbdfb9313cc672bb4158d572265abfb8a5c"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No amount, return target, investment schedule or realized adverse effect is supplied."
+      ],
+      "materiality_reason": "Context for material AI capital and operating commitments.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "potential-ai-harms",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet discloses potential AI harms involving content, accuracy, discrimination, IP, publicity rights, defamation, privacy and cybersecurity.",
+      "claim_ids": [
+        "0748de6c3d9aada96222ebd4a31ee5fe2e6131f3acf917024ea63a921390837b"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Potential risks are not findings that each harm occurred; no incidence, severity or remediation result is quantified."
+      ],
+      "materiality_reason": "Accountability risk associated with AI deployment.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "recurring-cyberattack-attempts",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet reports regular cyberattacks and attempts to gain unauthorized systems access.",
+      "claim_ids": [
+        "4a91fc77f5453be613506fc511ca0a3ce2def2b74c4d8aa61a518d431ecb0663"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Original summary adds expected future incidents/vulnerabilities beyond this saved quotation.",
+        "Attempts are not demonstrated breaches or quantified material losses."
+      ],
+      "materiality_reason": "Persistent security risk disclosure.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "search-remedies-proceeding",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Court is conducting a separate Search remedies proceeding; possible remedies include business-model, operational, structural and distribution changes.",
+      "claim_ids": [
+        "950a41c17539df13de50f80944a25d515f564302b06570d760f3b8d2097f2246"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "UNSUPPORTED SUMMARY: this excerpt does not state the August 2024 antitrust ruling or its date.",
+        "Full saved page 25 contains the ruling elsewhere, and curated claim 71 supports it; retain claim 25 as remedies context rather than substitute its summary.",
+        "No final remedy or dated completion is established."
+      ],
+      "materiality_reason": "Material potential changes to the core Search business.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "search-appeal-and-remedies-risk",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet plans to appeal but gives no assurance of success or reduced remedies; potential remedies could harm its business and financial results.",
+      "claim_ids": [
+        "3dae5cfaffa1971b82e4d5354b1a8af22a79e2f221282f3925620ca8f2d17ec3"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Appeal intention and adverse-risk warning are distinct from the court-decision forecast in claim 72.",
+        "No filing event, successful appeal or final remedy is demonstrated."
+      ],
+      "materiality_reason": "Keeps contrary evidence visible around Search litigation.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "cybersecurity-materiality-assessment",
+      "kind": "context",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet reports no material effect to date from cybersecurity risks/incidents on strategy, operating results or financial condition, with no assurance about future effects.",
+      "claim_ids": [
+        "015fded68a1f9ee3f9a67fc0d386dbd2dcb583d177307ea6ac49ad55ed3ebd5e"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Company assessment does not imply no attacks, no breaches, independent security assurance or personal honesty."
+      ],
+      "materiality_reason": "Balances recurring-attack disclosure with the stated materiality assessment.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "consolidated-revenue-growth-fy2024",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "FY2024 revenue was $350.0 billion, up 14%; Services increased $32.4 billion (12%) and Cloud $10.1 billion (31%).",
+      "claim_ids": [
+        "2e2718a0d44b173ad411b4700b28d48dc0798f8ec1206858079b6f5f39f185f1"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 (2024-01-01 through 2024-12-31)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Aggregate, segment and growth figures are different metric components; avoid adding growth rates.",
+        "Cloud growth overlaps claim 44 but the whole consolidated statement is not a duplicate; normalize components before comparisons.",
+        "Company revenue growth does not establish management contribution, efficiency or AI profitability."
+      ],
+      "materiality_reason": "Material company operating result.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "online-economy-growth-outlook",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Alphabet expects online-economy evolution to continue benefiting revenue and business growth at a slower pace than historically.",
+      "claim_ids": [
+        "2adfcf15ea06bb86475a5b2cee31cc974e7b90eeb0eb3693669e3aeb52f47554"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No magnitude, comparison baseline or forecast horizon is defined."
+      ],
+      "materiality_reason": "Preserves the slower-growth qualification.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "competition-for-users-and-advertisers",
+      "kind": "challenge",
+      "dimension": "operating_efficiency",
+      "summary": "Increasing competition for user engagement and advertisers, including AI providers, may affect revenue.",
+      "claim_ids": [
+        "8898f4df25daded9ce146e51cd70cabba930f79f8d528b31020d76af2cb28de2"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No realized revenue loss, timing or quantified impact is established; distinct from AI investment needs in claim 22."
+      ],
+      "materiality_reason": "Material pressure on the core revenue base.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "product-expansion-strategy",
+      "kind": "context",
+      "dimension": "delivery_credibility",
+      "summary": "Alphabet is focused on expanding products/services to maintain and grow its business as devices and modalities change.",
+      "claim_ids": [
+        "d026a27973204a822e639ca0eb7270260c6a99cf0ec38e55e2a2124c66f8e624"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Strategic focus has no deliverable, quantity or deadline; do not count as a measurable promise."
+      ],
+      "materiality_reason": "Context for product and distribution choices.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "traffic-acquisition-cost-outlook",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Alphabet expects traffic-acquisition payments to grow with revenue; TAC rate depends on device/geographic/product/partner mix and agreement terms.",
+      "claim_ids": [
+        "a2e5ecc6c16bfb5b50f0cf3401750257d64cffe2e31bf8dc5eed24a8a7405e00"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Absolute TAC and TAC rate are separate measures; no magnitude or deadline is forecast."
+      ],
+      "materiality_reason": "Cost outlook relevant to operating-margin interpretation.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "device-and-advertising-mix-margin-pressure",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Diverse devices/modalities and newer advertising formats may support revenue but pressure margins; Alphabet expects the trend to continue.",
+      "claim_ids": [
+        "a0980ab2b606f2e6379458a86ab772bfb534eba19d3599dc7370cd2bd43e7651",
+        "97f358ae515124a0ee22e336196e8624aaa6450a76d43782d213f3d1925cdea1"
+      ],
+      "grouping_rationale": "Same MD&A trend: claim 37 states the device/modality/new-format revenue-versus-margin effect; claim 38 explicitly reaffirms its continuing margin pressure. Full saved page 34 establishes the referent. Separate TAC-payment forecast remains in claim 36.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No quantified revenue or margin effect or time horizon is supplied; the possibility and expectation are retained, not presented as realized losses."
+      ],
+      "materiality_reason": "Material tradeoff between revenue expansion and margin economics.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "ai-monetization-outlook",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Alphabet expects continued AI integration, including in Search, to affect monetization trends.",
+      "claim_ids": [
+        "bbe4cb19e3f9cea4b58c8bc599b699270dff1733b80e7ef0eb6d434c34da890a"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Direction, scale, revenue attribution and profitability are unspecified; product reach cannot establish financial benefit."
+      ],
+      "materiality_reason": "Material unresolved economics of AI rollout.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "technical-infrastructure-investment-outlook",
+      "kind": "forecast",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet expects technical-infrastructure investment to increase relative to 2024, particularly for AI.",
+      "claim_ids": [
+        "a2b0c9304f3e806ccde4121cd0c574d27cdd8c84db7da2c746b62e378ebd972d"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No amount or exact future period is stated.",
+        "Distinct qualitative outlook from the April 2025 $75 billion capex plan already in v1; do not treat the two as identical versions without review."
+      ],
+      "materiality_reason": "Material investment-direction claim.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "regulatory-cost-and-business-model-risk",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Regulatory/legal changes may raise costs, constrain products/practices and require business-model or operational changes.",
+      "claim_ids": [
+        "30589cc081bcab9c0b5c589efd39321ac605eb623a4881db012b76b34ae62b3f"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No specific final action, amount or timing is established; do not merge all legal matters into a single outcome."
+      ],
+      "materiality_reason": "Cross-cutting operating and accountability risk.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "hiring-compensation-outlook",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Alphabet expects continued global hiring and competitive compensation programs.",
+      "claim_ids": [
+        "b09a16fd21a138653a2a316a825b01649832293415615dbb392c3d77f4691c85"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No headcount target, compensation benchmark or deadline; existing headcount cannot establish fulfillment."
+      ],
+      "materiality_reason": "Context for labor costs and organization growth.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "subscriptions-platforms-devices-growth",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "FY2024 subscriptions/platforms/devices revenue grew $5.7 billion, primarily through YouTube paid-subscriber growth followed by Google One.",
+      "claim_ids": [
+        "64f31ca036f412c3664dcbd4ce54b3fe0a36f0a38f5f93fc48e6439af5e868c2"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 versus FY2023 (calendar fiscal years)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Segment category includes platforms and devices; do not label the entire increase subscription revenue or derive ARPU from April 2025 counts."
+      ],
+      "materiality_reason": "Material recurring-revenue growth explanation.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "cloud-revenue-growth",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "FY2024 Cloud revenue grew $10.1 billion, mainly through Google Cloud Platform infrastructure services.",
+      "claim_ids": [
+        "ccd161b3f108e9b6764dde147ce00caba61280a454d643f968d14e45319fe42b"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 versus FY2023 (calendar fiscal years)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Overlaps the Cloud component of claim 30; this narrower scope is retained separately rather than counted as corroboration.",
+        "Revenue growth is not Cloud margin, AI revenue attribution or return on capex."
+      ],
+      "materiality_reason": "Material segment growth with a specified driver.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "advertising-monetization-metrics",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "FY2024 versus FY2023: Search paid clicks +5%, cost per click +7%; Network impressions -11%, cost per impression +10%.",
+      "claim_ids": [
+        "7fb7b2be58502175a1195bb0694c821c4ed0c59409960470e1748ddc07c66b96"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 versus FY2023 (calendar fiscal years)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Four different metrics across two scopes require separate normalized entries before comparison.",
+        "Full saved page 41 establishes FY2023-to-FY2024 headers; preserve the negative impressions figure.",
+        "These are year-over-year changes, not absolute counts, prices or margins."
+      ],
+      "materiality_reason": "Material favorable and adverse advertising-volume/price movements.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "other-bets-loss-increase",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "Other Bets operating loss increased $349 million in FY2024 versus FY2023.",
+      "claim_ids": [
+        "ded7423db0f1c89e174434ba1411681d2bed75abc47a9958ca646ae208e29b17"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 versus FY2023 (calendar fiscal years)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "This is the increase in loss, not the total operating loss or cash burn; no personal contribution is established."
+      ],
+      "materiality_reason": "Material adverse segment result.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "year-end-liquidity",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Cash, cash equivalents and short-term marketable securities totaled $95.7 billion at year-end 2024.",
+      "claim_ids": [
+        "789ffa98c4015c5a1d62ae8e68476b937b5f21269bcbf12fa8e920c802ae7255"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Point-in-time balance is not operating cash flow, free cash flow or proof of investment returns."
+      ],
+      "materiality_reason": "Capacity for investment, commitments and shareholder distributions.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "liquidity-sufficiency-outlook",
+      "kind": "forecast",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet expects liquidity and operating/financing cash flows to cover operating activities and investing/financing commitments for at least the next 12 months and thereafter.",
+      "claim_ids": [
+        "722ff620cddb55d58718917840dd4d668a2f5fe9f1231280710e2c6370a6d75b"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": "At least the next 12 months, thereafter foreseeable future (raw horizon; anchor unreviewed)"
+      },
+      "limitations": [
+        "Relative horizon lacks a reviewed statement anchor; do not invent an exact deadline.",
+        "Forward-looking assessment is not a funding guarantee or measured cash requirement."
+      ],
+      "materiality_reason": "Material funding-capacity assessment.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "backlog-recognition-outlook",
+      "kind": "forecast",
+      "dimension": "delivery_credibility",
+      "summary": "Year-end revenue backlog was $93.2 billion, primarily Cloud; approximately half is expected to become revenue over the next 24 months, the rest thereafter.",
+      "claim_ids": [
+        "d96907a61eb7ce124684302749213d592b4717da5bf667642fb9920ec0f5e21c"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": "Next 24 months for approximately half; remainder thereafter (raw horizon; exact interval unreviewed)"
+      },
+      "limitations": [
+        "Contractual backlog balance and revenue-recognition forecast need separate metrics; backlog is not current revenue.",
+        "Timing depends on delivery and customer usage; backlog excludes short-duration and cancellable contracts.",
+        "Relative 24-month horizon is retained without an exact deadline until normalization review."
+      ],
+      "materiality_reason": "Material contracted business and conversion outlook.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "purchase-contractual-obligations",
+      "kind": "obligation",
+      "dimension": "capital_stewardship",
+      "summary": "Year-end material purchase commitments and other contractual obligations totaled $55.4 billion, including $32.5 billion short-term.",
+      "claim_ids": [
+        "78463048eafdbde9e5e68330561cc75142b42141a719168da6935deeb3646a6d"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Contractual obligations are not discretionary delivery promises.",
+        "Category overlaps require checking before adding to lease, licensing or investment commitments; short-term is not a completion date."
+      ],
+      "materiality_reason": "Large committed future cash requirements.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "legal-losses-beyond-accruals",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Unresolved legal/regulatory matters may produce material losses beyond amounts recorded.",
+      "claim_ids": [
+        "eddac7c3af94ff8aced89841bdd359f60809caa67faa53e4ab571fbac7460c82"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "No additional loss amount, probability or settlement date is supplied; potential loss is not a realized expense."
+      ],
+      "materiality_reason": "Material limitation on reported legal accruals.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "financial-market-risk-exposure",
+      "kind": "challenge",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet is exposed to foreign-exchange, interest-rate and equity-investment risk.",
+      "claim_ids": [
+        "c6a38eb200a9b1d1bb87b95348df3a7ea211a300f67e06ba46face36abf7d212"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Generic exposure disclosure does not quantify realized loss or hedge effectiveness."
+      ],
+      "materiality_reason": "Context for liquidity and investment stewardship.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "fx-hypothetical-sensitivity",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "A hypothetical adverse 10% FX move at year-end would reduce pretax income by about $135 million for 2024 versus $503 million for 2023, after FX contracts.",
+      "claim_ids": [
+        "2d1e70a67766d4dc12b6b2badec2de46cf80401e6583ec65346355ce6a776127"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 versus 2023-12-31 (scenario measurement dates)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Scenario sensitivity is not an actual loss, a forecast or a delivery outcome.",
+        "Balance-sheet-date exposure and hedge assumptions must be preserved; lower sensitivity alone does not prove better stewardship."
+      ],
+      "materiality_reason": "Quantifies a specific financial-risk scenario.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "nonmarketable-equity-carrying-value",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Year-end non-marketable equity carrying value was $35.5 billion; $19.9 billion was remeasured during FY2024, primarily Level 2 when measured.",
+      "claim_ids": [
+        "d3688fe457748c628215739f1cce5136c5bfc1424e9577aff535472e4526b376"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Carrying value and remeasured amount are not gains, cash realizations or independently proven investment returns."
+      ],
+      "materiality_reason": "Material investment exposure and valuation context.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "hedge-gain-reclassification-outlook",
+      "kind": "forecast",
+      "dimension": "capital_stewardship",
+      "summary": "A $731 million pretax accumulated FX cash-flow-hedge gain at year-end is expected to move from AOCI into revenue within the next 12 months.",
+      "claim_ids": [
+        "4b876f1911cebfe748b173cc6785f5df8278763b67554f82abdf889a6a1a04ed"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": "Within the next 12 months (raw horizon; exact interval unreviewed)"
+      },
+      "limitations": [
+        "Accounting reclassification is not new customer revenue or new cash earnings.",
+        "Relative horizon is retained; exact recognition interval and actual result require review."
+      ],
+      "materiality_reason": "Material hedge accounting effect.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "waymo-funding-fy2024",
+      "kind": "decision",
+      "dimension": "capital_stewardship",
+      "summary": "Waymo received $5.6 billion funding during FY2024, with Alphabet providing the majority.",
+      "claim_ids": [
+        "1f81b398ce29d6840e22747e3c66e4bf195e249980826a442055b0dca3eb4c07"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2024 (2024-01-01 through 2024-12-31)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "The precise Alphabet contribution and authorizing actor are not supplied.",
+        "Funding is a capital-allocation event, not revenue, profit or a return; paid-ride adoption is a separate statement."
+      ],
+      "materiality_reason": "Material capital allocation to autonomous driving.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "other-bets-vie-funding-option",
+      "kind": "conditional_intention",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet may continue funding operations of certain consolidated Other Bets VIEs.",
+      "claim_ids": [
+        "caedf93923c6fbbab64788876cf69f804e4e70c8ed57cb490d1272cc773839ba"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "May expresses discretion, not a commitment, forecast certainty or a funding amount; entity and timeline are unspecified."
+      ],
+      "materiality_reason": "Context for continuing capital exposure.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "unconsolidated-vie-funding-commitments",
+      "kind": "obligation",
+      "dimension": "capital_stewardship",
+      "summary": "Future funding commitments for unconsolidated VIEs were $1.5 billion at year-end 2024 versus $1.7 billion at year-end 2023.",
+      "claim_ids": [
+        "9bd8178480c4c6280cf32774fab1eaa226c779ee943c6549a4412c6922ee3c16"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 versus 2023-12-31",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Commitments are distinct from the consolidated Waymo funding and discretionary future funding; payment schedule and conditions are absent."
+      ],
+      "materiality_reason": "Committed exposure to unconsolidated investments.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "uncommenced-lease-commitments",
+      "kind": "obligation",
+      "dimension": "capital_stewardship",
+      "summary": "Signed leases not yet commenced have $773 million short-term and $6.5 billion long-term future payments; commencement is scheduled in 2025–2028, with noncancelable terms of 1–25 years.",
+      "claim_ids": [
+        "60fe18e88ff443c038e3f916d4bf47e31968d86acbc7ce4bd5d344e9184719e1"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "Scheduled lease commencement between 2025 and 2028 (future interval, not completed event)",
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Contractual future payments are obligations, not merely forecasts or capex promises.",
+        "Commencement dates are not payment-completion deadlines; obligations were not yet recorded on the balance sheet."
+      ],
+      "materiality_reason": "Material committed infrastructure/cash exposure.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "commercial-paper-capacity-and-balance",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Commercial-paper program capacity was $10 billion; $2.3 billion was outstanding at year-end 2024 at a 4.4% weighted-average effective rate.",
+      "claim_ids": [
+        "8be3507f7c9a2cf7e3bcd6a3ec47338ca1406b980762cf35aea634838f5e55f3"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Capacity, outstanding balance and interest rate are separate metrics; capacity is not promised borrowing.",
+        "No authorizing actor or issuance dates are supplied; debt balance is not investment return."
+      ],
+      "materiality_reason": "Financing capacity and debt exposure.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "revolving-credit-facilities",
+      "kind": "context",
+      "dimension": "capital_stewardship",
+      "summary": "Year-end revolving facilities totaled $10 billion: $4 billion expires April 2025 and $6 billion April 2028; none was drawn.",
+      "claim_ids": [
+        "11de22c73d979923364bda39725f02bd4454934c282234d26454ed415fb44610"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "Contractual expirations: April 2025 and April 2028 (month precision; future at balance date)",
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Facility capacity is not cash or a promise to borrow; expirations are contractual dates, not management delivery deadlines.",
+        "Pricing partly depends on sustainability progress; referenced goals and pricing formulas are not specified here."
+      ],
+      "materiality_reason": "Funding flexibility and sustainability-linked financing context.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "shopping-fine-upheld-and-paid",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "ECJ upheld the €2.4 billion Shopping fine in September 2024; Alphabet paid $3.0 billion in Q3 2024.",
+      "claim_ids": [
+        "e3419fab87a788b5d1a031d62682ccfe4a70e2f99a338548198020f022a8efcb"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "Ruling: September 2024; payment: Q3 2024 (month/quarter precision)",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Legal decision and cash payment are separate events with different currencies; preserve both without inventing FX conversion.",
+        "No exact payment day or management/director contribution is established."
+      ],
+      "materiality_reason": "Material adverse legal event and cash consequence.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "android-fine-and-pending-appeal",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "General Court affirmed the Android decision in September 2022 while reducing the fine from €4.3 billion to €4.1 billion; ECJ appeal remained pending.",
+      "claim_ids": [
+        "2ba28db3dadd372cc9166610159710c1baac8b4ac81ed96593093b7368aeaa31"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "September 2022 General Court ruling (month precision)",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "The report repeats a historical ruling and implementation changes; their original disclosure and change dates are absent.",
+        "Pending in this historical pack does not establish litigation status today."
+      ],
+      "materiality_reason": "Material unresolved Android litigation.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "adsense-fine-annulment-and-appeal",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "General Court annulled the €1.5 billion AdSense for Search fine in September 2024; the EC appealed.",
+      "claim_ids": [
+        "ac3b19191afb85514a0b1381ee18e167b686396c8ffc0e35c29f282984e95ef6"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "September 2024 annulment (month precision); EC appeal date unknown",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Annulment with an appeal is not final resolution; appeal date and later outcome are absent."
+      ],
+      "materiality_reason": "Material favorable ruling qualified by continued litigation.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "search-remedies-timing-forecast",
+      "kind": "forecast",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet expected a Search remedies decision likely in the second half of 2025 and intended to appeal afterward.",
+      "claim_ids": [
+        "52792d145d856e8bc37fdc9ac9348e2545a07d2215a2dbef0d587c8f0fa68e08"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": "Likely second half of 2025 (forecast window; exact dates unreviewed)"
+      },
+      "limitations": [
+        "Court timing is an expectation about a third party, not a management delivery promise.",
+        "Afterward appeal intention needs a separate normalized entry if tracked; neither decision nor appeal fulfillment appears here."
+      ],
+      "materiality_reason": "Material legal timing and intended response.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "adtech-decision-timing-forecast",
+      "kind": "forecast",
+      "dimension": "disclosure_accountability",
+      "summary": "Ad-tech trial ended September 2024; Alphabet expected a decision in early 2025.",
+      "claim_ids": [
+        "1aa49ebf6c5e723e28efafab022242ae475babf403b9ffaab1b55acebf9ad96e"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "September 2024 trial completion (month precision)",
+        "measurement_period": null,
+        "target_deadline": "Early 2025 (raw forecast window; exact boundaries unknown)"
+      },
+      "limitations": [
+        "Early 2025 has no exact boundaries and must not become an invented deadline.",
+        "Third-party court timing is not management delivery; no later judgment is supplied."
+      ],
+      "materiality_reason": "Material legal exposure and expected timing.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "google-play-remedies-and-appeal",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "An October 2024 Google Play remedies order required operational, business-model and contract changes; Alphabet appealed, with implementation temporarily paused.",
+      "claim_ids": [
+        "a9b46cd7988a5c0405918c90774749e410e81f55a113dd9874c7f7107c28b028"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "October 2024 remedies decision (month precision)",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Temporary pause is not reversal or final resolution; pause and appeal dates are unspecified.",
+        "Preserve the historical reporting cutoff; no inference about current implementation."
+      ],
+      "materiality_reason": "Material mandated changes and unresolved appeal.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "privacy-litigation-exposure",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Ongoing US/EU privacy investigations and litigation could lead to significant fines, judgments and product changes.",
+      "claim_ids": [
+        "ae0bc3496584ec488497335d45d1ce4ac9bd6a87d14d48e6aa4d5ab4ce7f1feb"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Allegations and possible penalties are not established findings or quantified realized losses; cases require separate attribution and outcomes."
+      ],
+      "materiality_reason": "Material privacy/accountability exposure.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "stock-compensation-expense",
+      "kind": "outcome",
+      "dimension": "operating_efficiency",
+      "summary": "Total SBC expense rose from $19.5 billion in FY2022 to $22.1 billion in FY2023 and $22.8 billion in FY2024; $22.0 billion of FY2024 expense concerned expected stock-settled awards.",
+      "claim_ids": [
+        "51009baacab64ddd7fef4299a7657bda733e3c6c26a79b236dfe755086397183"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "FY2022, FY2023 and FY2024 (calendar fiscal years)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Total expense and stock-settled component are different measures.",
+        "Expense is not issuance, cash cost or realized dilution; do not infer individuals compensation or stewardship solely from this total."
+      ],
+      "materiality_reason": "Material compensation cost and potential dilution context.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "unrecognized-rsu-cost-outlook",
+      "kind": "forecast",
+      "dimension": "operating_efficiency",
+      "summary": "Unrecognized unvested-RSU compensation cost was $34.8 billion at year-end, expected to be recognized over a 2.5-year weighted-average period.",
+      "claim_ids": [
+        "74357a0781825c02042f1ad022c98b7cdb17c9d7bb5d907842e7e3f8fda8242b"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2024-12-31 (point-in-time balance)",
+        "target_deadline": null
+      },
+      "limitations": [
+        "A weighted average is not a hard deadline or an end date for all recognition.",
+        "Unrecognized cost is not already-incurred expense, a cash payment obligation or an issuance count."
+      ],
+      "materiality_reason": "Material future compensation expense.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "unrecognized-tax-benefits",
+      "kind": "context",
+      "dimension": "disclosure_accountability",
+      "summary": "Gross unrecognized tax benefits were $7.1 billion, $9.4 billion and $12.6 billion at year-end 2022/2023/2024; $10 billion of the 2024 balance would affect the effective tax rate if recognized.",
+      "claim_ids": [
+        "c15762f86bbc54498f3f8ad4f8c9c1a38588a9f1fe651fa45ab53298429ca844"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": "As of 2022-12-31, 2023-12-31 and 2024-12-31",
+        "target_deadline": null
+      },
+      "limitations": [
+        "Tax-benefit balances and conditional rate impact are distinct from cash payable, assessed penalties or proven tax misconduct.",
+        "Recognition conditions and audit outcomes remain uncertain."
+      ],
+      "materiality_reason": "Material tax-accounting uncertainty and growing exposure.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "tax-audit-outcome-uncertainty",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "summary": "Alphabet states that tax-audit outcomes cannot be predicted with certainty.",
+      "claim_ids": [
+        "aae9cb4bf91e529b68097143a5201fbb417e824c6ae3770e5d9762108d6cb967"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": null,
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Original summary also mentions resolution timing, which is not stated in this excerpt; timing uncertainty appears elsewhere on full saved page 95.",
+        "Do not infer a likely loss or audit resolution from this warning."
+      ],
+      "materiality_reason": "Limitation on tax-accounting expectations.",
+      "timeline_candidate": false
+    },
+    {
+      "id": "ai-team-reorganization",
+      "kind": "decision",
+      "dimension": "operating_efficiency",
+      "summary": "April 2024 general-model team consolidation moved Research teams to Alphabet-level reporting from Q2; the Gemini app team joined DeepMind in October but costs remained in Services.",
+      "claim_ids": [
+        "aa9421637a7d7fbabe105f4f20f8e8b8cf8fd4961e6293d6937da13817f46191"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "April 2024 announcement; Q2 2024 prospective reporting change; October 2024 Gemini app-team move",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Two distinct organizational decisions in one record require separate entries with a shared source reference before ledger ingestion.",
+        "Reporting reclassification is not demonstrated savings; app-team reporting scope differs from general-model teams.",
+        "No named individual contribution or measured acceleration is supplied."
+      ],
+      "materiality_reason": "Material organization changes and segment-comparability implications.",
+      "timeline_candidate": true
+    },
+    {
+      "id": "january-2025-unrealized-equity-gain",
+      "kind": "outcome",
+      "dimension": "capital_stewardship",
+      "summary": "Alphabet recognized an $8 billion unrealized gain on a private-company investment following an observable transaction in January 2025.",
+      "claim_ids": [
+        "2127dd27b9b0de7d96fc3ef679751142b5b3663875e1941335b108445f7d14e1"
+      ],
+      "grouping_rationale": "Single extraction record retained as its own proposed review group; no topic-based merging.",
+      "suggested_dates": {
+        "statement": null,
+        "event": "January 2025 (month precision)",
+        "measurement_period": null,
+        "target_deadline": null
+      },
+      "limitations": [
+        "Subsequent event belongs to January 2025, not FY2024 income.",
+        "Unrealized fair-value uplift is not cash realization or a return attributable to a named executive; investee is unnamed."
+      ],
+      "materiality_reason": "Material subsequent investment valuation event.",
+      "timeline_candidate": true
+    }
+  ]
+}

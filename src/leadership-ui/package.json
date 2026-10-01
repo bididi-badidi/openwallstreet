@@ -1,0 +1,1 @@
+{"name":"timeline-motion-mockup","private":true,"version":"1.0.0","type":"module","scripts":{"build":"esbuild app.jsx --bundle --minify --outfile=build/app.js --define:process.env.NODE_ENV=\"\\\"production\\\"\""},"dependencies":{"react":"^19.0.0","react-dom":"^19.0.0","motion":"^12.0.0"},"devDependencies":{"esbuild":"^0.25.0"}}

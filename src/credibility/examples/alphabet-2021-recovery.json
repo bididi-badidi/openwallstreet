@@ -1,0 +1,35 @@
+{
+  "company": "Alphabet Inc.",
+  "aliases": [
+    "Google Inc.",
+    "GOOG",
+    "GOOGL"
+  ],
+  "as_of": "2026-09-30",
+  "parallelism": 1,
+  "max_documents_per_report": 1,
+  "max_chunks_per_document": 8,
+  "primary_hosts": [
+    "abc.xyz",
+    "www.sec.gov",
+    "s206.q4cdn.com",
+    "d18rn0p25nwr6d.cloudfront.net"
+  ],
+  "user_agent": "ManagementEvidenceResearch/1.0",
+  "reports": [
+    {
+      "report_type": "annual",
+      "fiscal_year": 2021,
+      "period_end": "2021-12-31",
+      "source_url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/287eecc5-a885-4a20-8d15-a6847ee5086f.pdf"
+    }
+  ],
+  "seed_sources": [
+    {
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/287eecc5-a885-4a20-8d15-a6847ee5086f.pdf",
+      "linked_from": "https://abc.xyz/investor/sec-filings/default.aspx",
+      "identity": "Issuer SEC Filings listing: Annual Filings / 2022 / Form 10-K dated February 2, 2022; report cover verifies fiscal year ended December 31, 2021. Issuer-linked CDN.",
+      "verified_link_date": "2026-09-30"
+    }
+  ]
+}

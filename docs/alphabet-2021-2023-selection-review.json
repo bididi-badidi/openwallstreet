@@ -1,0 +1,294 @@
+{
+  "schema": "wallstreet.selection-review.v1",
+  "selection_review_date": "2026-09-30",
+  "scope": "Maximum two proposed presentation moments per fiscal year, FY2021–FY2023. Local sources only; no model or network calls.",
+  "review_status": "proposed_not_semantically_approved",
+  "sources": [
+    {
+      "source_id": "alphabet-fy2021",
+      "fiscal_year": 2021,
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001652044/287eecc5-a885-4a20-8d15-a6847ee5086f.pdf",
+      "source_sha256": "6af9ae70cbcf033df26331a5094846b0825dc4260916481b9c5abf4d7c98faa2",
+      "text_snapshot": "data/live-alphabet-2021-recovery/worker-0/inputs/cad603ce3bd60a410734238aeff0cf64b3142659951381ad7fe0ad960a8127d8.text.json",
+      "report_period_end": "2021-12-31",
+      "issuer_pdf_publication_date": null
+    },
+    {
+      "source_id": "alphabet-fy2022",
+      "fiscal_year": 2022,
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2022/q4/goog-10-k-q4-2022.pdf",
+      "source_sha256": "caebdc3a1f6032dc4c76e7f5dd94961906f15faebbebe0912505340ac8251526",
+      "text_snapshot": "data/live-alphabet-2022-2023-recovery/worker-1/inputs/09e80c3171b3b5c21a314be5ba6e4418a763666efb847c37e35c0df6fc437612.text.json",
+      "report_period_end": "2022-12-31",
+      "issuer_pdf_publication_date": null,
+      "snapshot_note": "Same verified PDF now retained in the collector; initial proposal used a temporary text extraction."
+    },
+    {
+      "source_id": "alphabet-fy2023",
+      "fiscal_year": 2023,
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2023/q4/goog023-alphabet-2023-annual-report-web-1.pdf",
+      "source_sha256": "437c0598a9f621233bc85673ca18c3e72e153f06f98315a6940f63cba7b9e41f",
+      "text_snapshot": "data/live-alphabet-2022-2023-recovery/worker-0/inputs/c33463bb473724b3ce6ad028ae19455bde54335cc417095ce0f2df49cd5d1e8f.text.json",
+      "report_period_end": "2023-12-31",
+      "issuer_pdf_publication_date": null
+    }
+  ],
+  "selection_budget": {
+    "maximum": 6,
+    "selected": 6
+  },
+  "items": [
+    {
+      "id": "alphabet-2021-buyback-authorization",
+      "fiscal_year": 2021,
+      "title": "Board authorizes up to $50B of Class C repurchases",
+      "type": "decision",
+      "analytical_dimension": "capital_stewardship",
+      "display_date": "Apr 2021",
+      "date_kind": "event",
+      "event_date": "2021-04",
+      "date_precision": "month",
+      "measurement_period": null,
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": "Alphabet board collectively",
+        "individual_contribution": null
+      },
+      "interpretation": "The board created repurchase capacity; July 2021 amended eligible share classes.",
+      "limits": [
+        "Authorization capacity is not a promise to spend the full amount and cannot be matched to annual cash repurchases.",
+        "The July amendment expands eligible share classes; preserve it separately from the original authorization. No individual director contribution or investment-return judgment is established."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "related_revision": {
+        "event_date": "2021-07",
+        "date_precision": "month",
+        "change": "eligible_share_classes_amended",
+        "evidence": {
+          "source_id": "alphabet-fy2021",
+          "physical_pdf_page": 41,
+          "exact_quote": "In July 2021, the\nAlphabet board approved an amendment to the April 2021 authorization, permitting the company to repurchase both Class A and Class C shares",
+          "role": "revision",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      },
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2021",
+          "physical_pdf_page": 41,
+          "exact_quote": "In April 2021, the Board of Directors of Alphabet authorized the company to repurchase up to $50.0 billion of its Class C stock.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "alphabet-fy2021-revenue-outcome",
+      "fiscal_year": 2021,
+      "title": "FY2021: revenue $257.6B, up 41%",
+      "type": "outcome",
+      "analytical_dimension": "operating_efficiency",
+      "display_date": "FY2021",
+      "date_kind": "measurement_period",
+      "measurement_period": {
+        "start": "2021-01-01",
+        "end": "2021-12-31"
+      },
+      "event_date": null,
+      "date_precision": "year_period",
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": null,
+        "individual_contribution": null
+      },
+      "interpretation": "Reported consolidated revenue outcome; use as business scale/context in the operating-efficiency view, alongside costs and margins.",
+      "limits": [
+        "The report says the adverse effect of COVID-19 on 2020 advertising revenues contributed to the growth comparison. This is a company outcome, not a reviewed promise match or proof of an individual contribution."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2021",
+          "physical_pdf_page": 33,
+          "exact_quote": "Revenues were $257.6 billion, an increase of 41%. The increase in revenues was primarily driven by Google Services and Google Cloud.\nThe adverse effect of COVID-19 on 2020 advertising revenues also contributed to the year-over-year growth.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "alphabet-2022-mandiant-acquisition",
+      "fiscal_year": 2022,
+      "title": "Mandiant acquisition closes for $6.1B",
+      "type": "decision_and_completed_transaction",
+      "analytical_dimension": "capital_stewardship",
+      "display_date": "12 Sep 2022",
+      "date_kind": "event",
+      "event_date": "2022-09-12",
+      "date_precision": "day",
+      "measurement_period": null,
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": null,
+        "individual_contribution": null
+      },
+      "interpretation": "A completed acquisition expanded the Google Cloud business; the report states results enter Cloud from the acquisition date.",
+      "limits": [
+        "Completion and purchase price do not establish realized synergies, investment returns, or fulfillment of an earlier promise.",
+        "Acquired activity changes Google Cloud scope; retain acquisition context when comparing segment growth across years. No individual director or executive causation is established."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2022",
+          "physical_pdf_page": 32,
+          "exact_quote": "On September 12, 2022, we closed the acquisition of Mandiant for a total purchase price of $6.1 billion and\nadded more than 2,600 employees. Mandiant's financial results are reported within Google Cloud as of the\nacquisition date.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "alphabet-fy2022-revenue-outcome",
+      "fiscal_year": 2022,
+      "title": "FY2022: revenue $282.8B, up 10%",
+      "type": "outcome",
+      "analytical_dimension": "operating_efficiency",
+      "display_date": "FY2022",
+      "date_kind": "measurement_period",
+      "measurement_period": {
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "event_date": null,
+      "date_precision": "year_period",
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": null,
+        "individual_contribution": null
+      },
+      "interpretation": "Reported consolidated revenue outcome; use as business scale/context in the operating-efficiency view, alongside costs and margins.",
+      "limits": [
+        "Reported growth and constant-currency growth are distinct measures; the report separately states 14% constant-currency growth excluding hedging. Revenue growth alone does not establish operating efficiency, AI profitability, or director contribution."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2022",
+          "physical_pdf_page": 31,
+          "exact_quote": "Revenues were $282.8 billion, an increase of 10% year over year, primarily driven by an increase in Google\nServices revenues of $16.0 billion, or 7%, and an increase in Google Cloud revenues of $7.1 billion, or 37%.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "alphabet-2023-workforce-reduction",
+      "fiscal_year": 2023,
+      "title": "Workforce reduction announced; $2.1B annual severance charges",
+      "type": "decision_with_reported_cost",
+      "analytical_dimension": "operating_efficiency",
+      "display_date": "Jan 2023",
+      "date_kind": "announcement_event",
+      "event_date": "2023-01",
+      "date_precision": "month",
+      "measurement_period": null,
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": "Company announcement; individual not named in excerpt",
+        "individual_contribution": null
+      },
+      "interpretation": "The report dates the workforce-reduction announcement to January and reports severance costs for the full year separately.",
+      "reported_cost_measurement_period": {
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "limits": [
+        "The quoted passage supplies neither an exact January day nor a 12,000-person figure; do not infer either.",
+        "The $2.1B charge is a full-year amount, not a January cash payment. Workforce reduction and severance expense do not demonstrate savings, improved efficiency, or individual contribution."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2023",
+          "physical_pdf_page": 41,
+          "exact_quote": "In January 2023, we announced a reduction of our workforce, and as a result we recorded employee severance and\nrelated charges of $2.1 billion for the year ended December 31, 2023.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    },
+    {
+      "id": "alphabet-fy2023-revenue-outcome",
+      "fiscal_year": 2023,
+      "title": "FY2023: revenue $307.4B, up 9%",
+      "type": "outcome",
+      "analytical_dimension": "operating_efficiency",
+      "display_date": "FY2023",
+      "date_kind": "measurement_period",
+      "measurement_period": {
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "event_date": null,
+      "date_precision": "year_period",
+      "statement_date": null,
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": null,
+        "decision_by": null,
+        "individual_contribution": null
+      },
+      "interpretation": "Reported consolidated revenue outcome; use as business scale/context in the operating-efficiency view, alongside costs and margins.",
+      "limits": [
+        "Revenue growth alone does not establish promise delivery, AI profitability, or an individual contribution. Any margin comparison must retain the change in server/network useful lives: the report states $3.9B lower FY2023 depreciation expense on physical page 42."
+      ],
+      "delivery_status": "not_a_delivery_promise",
+      "evidence": [
+        {
+          "source_id": "alphabet-fy2023",
+          "physical_pdf_page": 41,
+          "exact_quote": "Revenues were $307.4 billion, an increase of 9% year over year, primarily driven by an increase in Google Services\nrevenues of $19.0 billion, or 8%, and an increase in Google Cloud revenues of $6.8 billion, or 26%.",
+          "role": "support",
+          "quote_presence_check": "passed_against_local_text_snapshot",
+          "saved_extraction_refs": [],
+          "extraction_acceptance": "not_yet_found_in_saved_extraction_chunks",
+          "semantic_review": "proposed_manual_selection_not_reviewed"
+        }
+      ]
+    }
+  ],
+  "global_limits": [
+    "Annual outcomes are measurement periods, never point events. Statement dates and first-disclosure dates remain unknown here unless supported separately.",
+    "Exact quotation presence is a provenance check, not approval of interpretation. Saved extraction references, where present, do not establish pipeline acceptance.",
+    "These items support contextual presentation only; no personal honesty score, universal score, or inferred individual causation."
+  ]
+}

@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development. Never commit real credentials.
+NEBIUS_JOB_SERVICE_URL=""
+NEBIUS_JOB_SERVICE_TOKEN=""
+RESEARCH_ACCESS_CODE=""

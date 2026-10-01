@@ -1,0 +1,877 @@
+{
+  "schema_version": 1,
+  "company": "Microsoft Corporation",
+  "scope": "2023 to 2025 fiscal annual reports; bounded live research",
+  "title": "What the company put on record",
+  "deck": "Source-backed statements from annual reports. Dates, attribution and interpretation remain subject to review.",
+  "as_of": "2026-10-01",
+  "review": "Live research; proposed interpretation. No management credibility score.",
+  "source_documents": 3,
+  "extracted_claims": 107,
+  "ledger_entries": 15,
+  "uncurated_claims": 92,
+  "claim_count_is_quality_score": false,
+  "coverage": [
+    {
+      "year": 2023,
+      "collector_excerpts": 41,
+      "status": "partial collection; review pending"
+    },
+    {
+      "year": 2024,
+      "collector_excerpts": 41,
+      "status": "partial collection; review pending"
+    },
+    {
+      "year": 2025,
+      "collector_excerpts": 25,
+      "status": "partial collection; review pending"
+    }
+  ],
+  "collection_gaps": [
+    "FY2023: 1 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2023: 1 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2023: 2 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2024: Publication date for Microsoft 2024 Annual Report not explicitly stated in source.",
+    "FY2024: Publication date (filing date) for SEC Form 10-K not explicitly stated in source.",
+    "FY2024: 2 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2024: No explicit Management’s Discussion and Analysis (MD&A) section was identified in the provided chunk.",
+    "FY2024: 2 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2024: 3 claims had unsupported quotations or page numbers and were rejected.",
+    "FY2025: MD&A section not present in the provided chunk.",
+    "FY2025: The provided chunk does not contain an MD&A (Management's Discussion and Analysis) section; it consists of financial statements and notes only.",
+    "FY2025: 1 claims had unsupported quotations or page numbers and were rejected."
+  ],
+  "limitations": [
+    "Three fiscal years and one annual report per year are attempted; coverage is not exhaustive.",
+    "Up to six text chunks and ten candidate claims per chunk are analyzed. Five milestones per report are selected.",
+    "Exact quotation presence is checked. Metadata, classification and semantic accuracy require human review.",
+    "No director contribution, promise fulfillment or challenge resolution has been established.",
+    "Source text and SHA-256 fingerprints are retained privately for seven days; original PDF/HTML bytes are not retained.",
+    "Timeline positions use report period ends. They must not be read as exact decision dates."
+  ],
+  "assessments": [
+    {
+      "id": "promises",
+      "refs": [
+        "fy2025-claim-13",
+        "fy2025-claim-14"
+      ],
+      "meaning": "Evidence inventory, not a management-quality score.",
+      "limit": "Targets and aspirations are recorded without concluding delivery.",
+      "review_status": "Human review required",
+      "reference_roles": {
+        "fy2025-claim-13": [
+          "source statement"
+        ],
+        "fy2025-claim-14": [
+          "source statement"
+        ]
+      },
+      "date_support": [],
+      "name": "Management promises",
+      "value": "Evidence collected",
+      "summary": "2 selected source statements. Interpretation remains open.",
+      "caption": "Review source evidence"
+    },
+    {
+      "id": "outcomes",
+      "refs": [
+        "fy2023-claim-0",
+        "fy2023-claim-1",
+        "fy2023-claim-2",
+        "fy2023-claim-3",
+        "fy2023-claim-4",
+        "fy2024-claim-5",
+        "fy2024-claim-6",
+        "fy2024-claim-7",
+        "fy2024-claim-8",
+        "fy2024-claim-9",
+        "fy2025-claim-10",
+        "fy2025-claim-11",
+        "fy2025-claim-12"
+      ],
+      "meaning": "Evidence inventory, not a management-quality score.",
+      "limit": "Reported facts have not been matched to prior promises or independently audited.",
+      "review_status": "Human review required",
+      "reference_roles": {
+        "fy2023-claim-0": [
+          "source statement"
+        ],
+        "fy2023-claim-1": [
+          "source statement"
+        ],
+        "fy2023-claim-2": [
+          "source statement"
+        ],
+        "fy2023-claim-3": [
+          "source statement"
+        ],
+        "fy2023-claim-4": [
+          "source statement"
+        ],
+        "fy2024-claim-5": [
+          "source statement"
+        ],
+        "fy2024-claim-6": [
+          "source statement"
+        ],
+        "fy2024-claim-7": [
+          "source statement"
+        ],
+        "fy2024-claim-8": [
+          "source statement"
+        ],
+        "fy2024-claim-9": [
+          "source statement"
+        ],
+        "fy2025-claim-10": [
+          "source statement"
+        ],
+        "fy2025-claim-11": [
+          "source statement"
+        ],
+        "fy2025-claim-12": [
+          "source statement"
+        ]
+      },
+      "date_support": [],
+      "name": "Reported performance",
+      "value": "Evidence collected",
+      "summary": "13 selected source statements. Interpretation remains open.",
+      "caption": "Review source evidence"
+    },
+    {
+      "id": "outlook",
+      "refs": [
+        "fy2023-claim-0"
+      ],
+      "meaning": "Evidence inventory, not a management-quality score.",
+      "limit": "Forecasts are uncertain and are not treated as achieved outcomes.",
+      "review_status": "Human review required",
+      "reference_roles": {
+        "fy2023-claim-0": [
+          "scope context only"
+        ]
+      },
+      "date_support": [],
+      "name": "Forward outlook",
+      "value": "Not assessed",
+      "summary": "No selected statement supports an assessment of this area.",
+      "caption": "Review scope and limits"
+    },
+    {
+      "id": "challenges",
+      "refs": [
+        "fy2023-claim-0"
+      ],
+      "meaning": "Evidence inventory, not a management-quality score.",
+      "limit": "A reported challenge does not establish responsibility, resolution or personal conduct.",
+      "review_status": "Human review required",
+      "reference_roles": {
+        "fy2023-claim-0": [
+          "scope context only"
+        ]
+      },
+      "date_support": [],
+      "name": "Management challenges",
+      "value": "Not assessed",
+      "summary": "No selected statement supports an assessment of this area.",
+      "caption": "Review scope and limits"
+    }
+  ],
+  "events": [
+    {
+      "id": "fy2023-claim-0",
+      "refs": [
+        "fy2023-claim-0"
+      ],
+      "meaning": "Microsoft reported record revenue of $211 billion in FY23.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2023-claim-0": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2023-claim-0",
+          "role": "report_period_end",
+          "value": "2023-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2023-06",
+      "date": "FY2023",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft",
+      "decision_by": "unknown",
+      "title": "Microsoft reported record revenue of $211 billion in FY23.",
+      "summary": "we delivered strong results in fiscal year 2023, including a record $211 billion in revenue and over $88 billion in operating income.",
+      "tile": "211",
+      "label": "billion USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2023-claim-1",
+      "refs": [
+        "fy2023-claim-1"
+      ],
+      "meaning": "Over 11,000 organizations use Azure OpenAI Service.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2023-claim-1": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2023-claim-1",
+          "role": "report_period_end",
+          "value": "2023-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2023-06",
+      "date": "FY2023",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft",
+      "decision_by": "unknown",
+      "title": "Over 11,000 organizations use Azure OpenAI Service.",
+      "summary": "More than 11,000 organizations across industries are already using it for advanced scenarios like content and code generation.",
+      "tile": "11000",
+      "label": "organizations",
+      "target_period": null
+    },
+    {
+      "id": "fy2023-claim-2",
+      "refs": [
+        "fy2023-claim-2"
+      ],
+      "meaning": "GitHub annual recurring revenue exceeded $1 billion in FY23.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2023-claim-2": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2023-claim-2",
+          "role": "report_period_end",
+          "value": "2023-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2023-06",
+      "date": "FY2023",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft",
+      "decision_by": "unknown",
+      "title": "GitHub annual recurring revenue exceeded $1 billion in FY23.",
+      "summary": "All up, GitHub surpassed $1 billion in annual recurring revenue for the first time this fiscal year.",
+      "tile": "1",
+      "label": "billion USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2023-claim-3",
+      "refs": [
+        "fy2023-claim-3"
+      ],
+      "meaning": "Dynamics 365 revenue surpassed $5 billion in FY23.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2023-claim-3": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2023-claim-3",
+          "role": "report_period_end",
+          "value": "2023-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2023-06",
+      "date": "FY2023",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft",
+      "decision_by": "unknown",
+      "title": "Dynamics 365 revenue surpassed $5 billion in FY23.",
+      "summary": "All up, Dynamics surpassed $5 billion in revenue over the past fiscal year, with our customer experience, service, and finance and supply chain businesses each surpassing $1 billion in annual sales.",
+      "tile": "5",
+      "label": "billion USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2023-claim-4",
+      "refs": [
+        "fy2023-claim-4"
+      ],
+      "meaning": "Security business revenue surpassed $20 billion in FY23.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2023-claim-4": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2023-claim-4",
+          "role": "report_period_end",
+          "value": "2023-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2023-06",
+      "date": "FY2023",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft",
+      "decision_by": "unknown",
+      "title": "Security business revenue surpassed $20 billion in FY23.",
+      "summary": "All up, more than 1 million organizations now count on our comprehensive, AI-powered solutions to protect their digital estates, and our security business surpassed $20 billion in annual revenue, as we help protect customers across clouds and endpoint platforms.",
+      "tile": "20",
+      "label": "billion USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2024-claim-5",
+      "refs": [
+        "fy2024-claim-5"
+      ],
+      "meaning": "Azure Arc customers reached 36,000, up 90% year‑over‑year.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2024-claim-5": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2024-claim-5",
+          "role": "report_period_end",
+          "value": "2024-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2024-06",
+      "date": "FY2024",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft Annual Report 2024",
+      "decision_by": "unknown",
+      "title": "Azure Arc customers reached 36,000, up 90% year‑over‑year.",
+      "summary": "We have 36,000 Arc customers, up 90 percent year-over-year.",
+      "tile": "36000",
+      "label": "customers",
+      "target_period": null
+    },
+    {
+      "id": "fy2024-claim-6",
+      "refs": [
+        "fy2024-claim-6"
+      ],
+      "meaning": "Azure AI customers exceeded 60,000, up nearly 60% year‑over‑year.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2024-claim-6": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2024-claim-6",
+          "role": "report_period_end",
+          "value": "2024-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2024-06",
+      "date": "FY2024",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft Annual Report 2024",
+      "decision_by": "unknown",
+      "title": "Azure AI customers exceeded 60,000, up nearly 60% year‑over‑year.",
+      "summary": "In total, we have over 60,000 Azure AI customers, up nearly 60 percent year-over-year.",
+      "tile": "60000",
+      "label": "customers",
+      "target_period": null
+    },
+    {
+      "id": "fy2024-claim-7",
+      "refs": [
+        "fy2024-claim-7"
+      ],
+      "meaning": "GitHub Copilot had over 1.8 million paid subscribers and over 77,000 enterprise customers, up 180% year‑over‑year.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2024-claim-7": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2024-claim-7",
+          "role": "report_period_end",
+          "value": "2024-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2024-06",
+      "date": "FY2024",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft Annual Report 2024",
+      "decision_by": "unknown",
+      "title": "GitHub Copilot had over 1.8 million paid subscribers and over 77,000 enterprise customers, up 180% year‑over‑year.",
+      "summary": "We now have more than 1.8 million paid subscribers and over 77,000 enterprise customers, up 180 percent year-over-year.",
+      "tile": "1.8",
+      "label": "million paid subscribers",
+      "target_period": null
+    },
+    {
+      "id": "fy2024-claim-8",
+      "refs": [
+        "fy2024-claim-8"
+      ],
+      "meaning": "Power Platform monthly active users reached 48 million, up 40% year‑over‑year.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2024-claim-8": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2024-claim-8",
+          "role": "report_period_end",
+          "value": "2024-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2024-06",
+      "date": "FY2024",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft Annual Report 2024",
+      "decision_by": "unknown",
+      "title": "Power Platform monthly active users reached 48 million, up 40% year‑over‑year.",
+      "summary": "In total, we now have 48 million monthly active users of Power Platform, up 40 percent year-over-year.",
+      "tile": "48",
+      "label": "million MAU",
+      "target_period": null
+    },
+    {
+      "id": "fy2024-claim-9",
+      "refs": [
+        "fy2024-claim-9"
+      ],
+      "meaning": "Teams Premium seats surpassed 3 million, up nearly 400% year‑over‑year.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2024-claim-9": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2024-claim-9",
+          "role": "report_period_end",
+          "value": "2024-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2024-06",
+      "date": "FY2024",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Microsoft Annual Report 2024",
+      "decision_by": "unknown",
+      "title": "Teams Premium seats surpassed 3 million, up nearly 400% year‑over‑year.",
+      "summary": "And Teams Premium surpassed 3 million seats, up nearly 400 percent year-over-year",
+      "tile": "3",
+      "label": "million seats",
+      "target_period": null
+    },
+    {
+      "id": "fy2025-claim-10",
+      "refs": [
+        "fy2025-claim-10"
+      ],
+      "meaning": "Revenue was $281.7 billion, up 15 percent.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2025-claim-10": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2025-claim-10",
+          "role": "report_period_end",
+          "value": "2025-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2025-06",
+      "date": "FY2025",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Satya Nadella",
+      "decision_by": "unknown",
+      "title": "Revenue was $281.7 billion, up 15 percent.",
+      "summary": "Revenue was $281.7 billion, up 15 percent.",
+      "tile": "$281.7 billion",
+      "label": "USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2025-claim-11",
+      "refs": [
+        "fy2025-claim-11"
+      ],
+      "meaning": "Operating income grew 17 percent to $128.5 billion.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2025-claim-11": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2025-claim-11",
+          "role": "report_period_end",
+          "value": "2025-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2025-06",
+      "date": "FY2025",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Satya Nadella",
+      "decision_by": "unknown",
+      "title": "Operating income grew 17 percent to $128.5 billion.",
+      "summary": "Operating income grew 17 percent to $128.5 billion.",
+      "tile": "$128.5 billion",
+      "label": "USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2025-claim-12",
+      "refs": [
+        "fy2025-claim-12"
+      ],
+      "meaning": "Azure surpassed $75 billion in revenue for the first time, up 34 percent.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2025-claim-12": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2025-claim-12",
+          "role": "report_period_end",
+          "value": "2025-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2025-06",
+      "date": "FY2025",
+      "date_kind": "Report period end",
+      "type": "reported fact",
+      "owner": "Satya Nadella",
+      "decision_by": "unknown",
+      "title": "Azure surpassed $75 billion in revenue for the first time, up 34 percent.",
+      "summary": "Azure surpassed $75 billion in revenue for the first time, up 34 percent.",
+      "tile": "$75 billion",
+      "label": "USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2025-claim-13",
+      "refs": [
+        "fy2025-claim-13"
+      ],
+      "meaning": "Over the next five years, Microsoft will invest $4 billion in cash and AI cloud technology to schools, community and technical colleges, and nonprofit organizations.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2025-claim-13": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2025-claim-13",
+          "role": "report_period_end",
+          "value": "2025-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2025-06",
+      "date": "FY2025",
+      "date_kind": "Report period end",
+      "type": "measurable promise",
+      "owner": "Satya Nadella",
+      "decision_by": "unknown",
+      "title": "Over the next five years, Microsoft will invest $4 billion in cash and AI cloud technology to schools, community and technical colleges, and nonprofit organizations.",
+      "summary": "Over the next five years, we will invest $4 billion in cash and AI cloud technology to schools, community and technical colleges, and nonprofit organizations.",
+      "tile": "$4 billion",
+      "label": "USD",
+      "target_period": null
+    },
+    {
+      "id": "fy2025-claim-14",
+      "refs": [
+        "fy2025-claim-14"
+      ],
+      "meaning": "Skilling initiatives will help 20 million people earn AI credentials over the next two years.",
+      "limit": "The timeline date is the report period end, not a verified statement or decision date. No promise-to-outcome comparison or individual contribution has been verified.",
+      "review_status": "Proposed interpretation; human review required",
+      "reference_roles": {
+        "fy2025-claim-14": [
+          "source statement"
+        ]
+      },
+      "date_support": [
+        {
+          "entry": "fy2025-claim-14",
+          "role": "report_period_end",
+          "value": "2025-06-30",
+          "basis": "Agent-reported document metadata; not an independently verified statement date"
+        }
+      ],
+      "month": "2025-06",
+      "date": "FY2025",
+      "date_kind": "Report period end",
+      "type": "measurable promise",
+      "owner": "Satya Nadella",
+      "decision_by": "unknown",
+      "title": "Skilling initiatives will help 20 million people earn AI credentials over the next two years.",
+      "summary": "Our skilling initiatives will help 20 million people earn AI credentials over the next two years, from foundational fluency to advanced technical training.",
+      "tile": "20 million",
+      "label": "people",
+      "target_period": null
+    }
+  ],
+  "evidence": {
+    "fy2023-claim-0": {
+      "claim_id": "fy2023-claim-0",
+      "page": 1,
+      "section": "Management’s Discussion and Analysis",
+      "excerpt": "we delivered strong results in fiscal year 2023, including a record $211 billion in revenue and over $88 billion in operating income.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "attribution": "Microsoft",
+      "report_year": 2023,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "we delivered strong results in fiscal year 2023, including a record $211 billion in revenue and over $88 billion in operating income."
+    },
+    "fy2023-claim-1": {
+      "claim_id": "fy2023-claim-1",
+      "page": 1,
+      "section": "Management’s Discussion and Analysis",
+      "excerpt": "More than 11,000 organizations across industries are already using it for advanced scenarios like content and code generation.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "attribution": "Microsoft",
+      "report_year": 2023,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "More than 11,000 organizations across industries are already using it for advanced scenarios like content and code generation."
+    },
+    "fy2023-claim-2": {
+      "claim_id": "fy2023-claim-2",
+      "page": 1,
+      "section": "Management’s Discussion and Analysis",
+      "excerpt": "All up, GitHub surpassed $1 billion in annual recurring revenue for the first time this fiscal year.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "attribution": "Microsoft",
+      "report_year": 2023,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "All up, GitHub surpassed $1 billion in annual recurring revenue for the first time this fiscal year."
+    },
+    "fy2023-claim-3": {
+      "claim_id": "fy2023-claim-3",
+      "page": 1,
+      "section": "Management’s Discussion and Analysis",
+      "excerpt": "All up, Dynamics surpassed $5 billion in revenue over the past fiscal year, with our customer experience, service, and finance and supply chain businesses each surpassing $1 billion in annual sales.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "attribution": "Microsoft",
+      "report_year": 2023,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "All up, Dynamics surpassed $5 billion in revenue over the past fiscal year, with our customer experience, service, and finance and supply chain businesses each surpassing $1 billion in annual sales."
+    },
+    "fy2023-claim-4": {
+      "claim_id": "fy2023-claim-4",
+      "page": 1,
+      "section": "Management’s Discussion and Analysis",
+      "excerpt": "All up, more than 1 million organizations now count on our comprehensive, AI-powered solutions to protect their digital estates, and our security business surpassed $20 billion in annual revenue, as we help protect customers across clouds and endpoint platforms.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar23/index.html",
+      "attribution": "Microsoft",
+      "report_year": 2023,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "All up, more than 1 million organizations now count on our comprehensive, AI-powered solutions to protect their digital estates, and our security business surpassed $20 billion in annual revenue, as we help protect customers across clouds and endpoint platforms."
+    },
+    "fy2024-claim-5": {
+      "claim_id": "fy2024-claim-5",
+      "page": 1,
+      "section": "Infrastructure",
+      "excerpt": "We have 36,000 Arc customers, up 90 percent year-over-year.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "attribution": "Microsoft Annual Report 2024",
+      "report_year": 2024,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "We have 36,000 Arc customers, up 90 percent year-over-year."
+    },
+    "fy2024-claim-6": {
+      "claim_id": "fy2024-claim-6",
+      "page": 1,
+      "section": "Data & AI",
+      "excerpt": "In total, we have over 60,000 Azure AI customers, up nearly 60 percent year-over-year.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "attribution": "Microsoft Annual Report 2024",
+      "report_year": 2024,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "In total, we have over 60,000 Azure AI customers, up nearly 60 percent year-over-year."
+    },
+    "fy2024-claim-7": {
+      "claim_id": "fy2024-claim-7",
+      "page": 1,
+      "section": "Digital & app innovation",
+      "excerpt": "We now have more than 1.8 million paid subscribers and over 77,000 enterprise customers, up 180 percent year-over-year.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "attribution": "Microsoft Annual Report 2024",
+      "report_year": 2024,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "We now have more than 1.8 million paid subscribers and over 77,000 enterprise customers, up 180 percent year-over-year."
+    },
+    "fy2024-claim-8": {
+      "claim_id": "fy2024-claim-8",
+      "page": 1,
+      "section": "Digital & app innovation",
+      "excerpt": "In total, we now have 48 million monthly active users of Power Platform, up 40 percent year-over-year.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "attribution": "Microsoft Annual Report 2024",
+      "report_year": 2024,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "In total, we now have 48 million monthly active users of Power Platform, up 40 percent year-over-year."
+    },
+    "fy2024-claim-9": {
+      "claim_id": "fy2024-claim-9",
+      "page": 1,
+      "section": "Modern work",
+      "excerpt": "And Teams Premium surpassed 3 million seats, up nearly 400 percent year-over-year",
+      "source_url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "attribution": "Microsoft Annual Report 2024",
+      "report_year": 2024,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "And Teams Premium surpassed 3 million seats, up nearly 400 percent year-over-year"
+    },
+    "fy2025-claim-10": {
+      "claim_id": "fy2025-claim-10",
+      "page": 1,
+      "section": "CEO Letter",
+      "excerpt": "Revenue was $281.7 billion, up 15 percent.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "attribution": "Satya Nadella",
+      "report_year": 2025,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "Revenue was $281.7 billion, up 15 percent."
+    },
+    "fy2025-claim-11": {
+      "claim_id": "fy2025-claim-11",
+      "page": 1,
+      "section": "CEO Letter",
+      "excerpt": "Operating income grew 17 percent to $128.5 billion.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "attribution": "Satya Nadella",
+      "report_year": 2025,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "Operating income grew 17 percent to $128.5 billion."
+    },
+    "fy2025-claim-12": {
+      "claim_id": "fy2025-claim-12",
+      "page": 1,
+      "section": "CEO Letter",
+      "excerpt": "Azure surpassed $75 billion in revenue for the first time, up 34 percent.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "attribution": "Satya Nadella",
+      "report_year": 2025,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "Azure surpassed $75 billion in revenue for the first time, up 34 percent."
+    },
+    "fy2025-claim-13": {
+      "claim_id": "fy2025-claim-13",
+      "page": 1,
+      "section": "CEO Letter",
+      "excerpt": "Over the next five years, we will invest $4 billion in cash and AI cloud technology to schools, community and technical colleges, and nonprofit organizations.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "attribution": "Satya Nadella",
+      "report_year": 2025,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "Over the next five years, we will invest $4 billion in cash and AI cloud technology to schools, community and technical colleges, and nonprofit organizations."
+    },
+    "fy2025-claim-14": {
+      "claim_id": "fy2025-claim-14",
+      "page": 1,
+      "section": "CEO Letter",
+      "excerpt": "Our skilling initiatives will help 20 million people earn AI credentials over the next two years, from foundational fluency to advanced technical training.",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "attribution": "Satya Nadella",
+      "report_year": 2025,
+      "quote_verification": "Exact source text matched; semantic interpretation requires review",
+      "snapshot_method": "HTML visible text; synthetic page 1; cited excerpt shown here; full text is in the evidence download",
+      "origin": "Live Nebius extraction, source validated by Cloudflare Workflow",
+      "source_page_text": "Our skilling initiatives will help 20 million people earn AI credentials over the next two years, from foundational fluency to advanced technical training."
+    }
+  }
+}

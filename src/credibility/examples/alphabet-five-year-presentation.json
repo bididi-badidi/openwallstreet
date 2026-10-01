@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "company": "Alphabet Inc.",
+  "fiscal_years": [
+    2021,
+    2025
+  ],
+  "title": "Five years, in perspective.",
+  "deck": "Major decisions, promises and outcomes. Open a moment to inspect the evidence.",
+  "limitations": [
+    "Historical source record, not a current litigation assessment.",
+    "Missing reports and incomplete extraction are visible in coverage; selected milestones are not an exhaustive event history.",
+    "Review status describes interpretation. Exact quotation checks do not prove claims, causation or delivery."
+  ],
+  "events": [
+    {
+      "id": "buyback",
+      "entry_ids": [
+        "april-2024-buyback-authorization"
+      ],
+      "anchor_entry": "april-2024-buyback-authorization",
+      "anchor_kind": "event",
+      "title": "A $70B buyback authorization.",
+      "tile": "$70B",
+      "label": "AUTHORIZED",
+      "summary": "Board permission for additional repurchases; separate from annual spending.",
+      "meaning": "The source directly names the board as authorizing additional share repurchases. This documents board activity, but does not establish whether the price paid created value.",
+      "limit": "The $62B repurchased during FY2024 spans the year. It cannot be treated as fulfillment of this specific authorization. No individual director vote is evidenced.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "dividend",
+      "entry_ids": [
+        "dividends-fy2024"
+      ],
+      "anchor_entry": "dividends-fy2024",
+      "anchor_kind": "event",
+      "title": "The first cash dividends.",
+      "tile": "$7.4B",
+      "label": "FY2024 TOTAL",
+      "summary": "Payments begin in June. The $7.4B total covers the full year.",
+      "meaning": "The company began returning cash through dividends. The source reports the first payment month and the annual total separately.",
+      "limit": "Dividends distribute existing cash. They do not by themselves establish new monetization ability or return on invested capital.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "search",
+      "entry_ids": [
+        "search-antitrust-ruling"
+      ],
+      "anchor_entry": "search-antitrust-ruling",
+      "anchor_kind": "event",
+      "title": "A ruling against Search.",
+      "tile": "Search",
+      "label": "ANTITRUST",
+      "summary": "The report describes antitrust violations and unresolved remedies.",
+      "meaning": "A material governance and business-model risk belongs beside growth and capital-allocation events so the record is balanced.",
+      "limit": "Historical issuer account only. This pack does not establish the current case status or personal misconduct by a director.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "fine",
+      "entry_ids": [
+        "shopping-fine-2024"
+      ],
+      "anchor_entry": "shopping-fine-2024",
+      "anchor_kind": "event",
+      "title": "A fine with a cash cost.",
+      "tile": "$3.0B",
+      "label": "Q3 PAYMENT",
+      "summary": "Shopping fine upheld in September; payment reported for Q3.",
+      "meaning": "This is a disclosed legal outcome with a cash consequence, rather than only a hypothetical risk.",
+      "limit": "The payment date is given as Q3, not a specific September date. The source does not attribute responsibility to an individual director.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "gemini",
+      "entry_ids": [
+        "gemini-organization-2024"
+      ],
+      "anchor_entry": "gemini-organization-2024",
+      "anchor_kind": "event",
+      "title": "Gemini moves closer to research.",
+      "tile": "Gemini",
+      "label": "TEAM MOVE",
+      "summary": "The app team joins DeepMind. Productivity gains are not quantified.",
+      "meaning": "A dated management action can later be connected to delivery speed, cost or product outcomes if comparable evidence becomes available.",
+      "limit": "No quantified savings or causal link to margin improvement is established. Team costs continued within Google Services.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "results",
+      "entry_ids": [
+        "operating-margin-fy2024",
+        "revenue-fy2024",
+        "operating-expenses-fy2024"
+      ],
+      "anchor_entry": "operating-margin-fy2024",
+      "anchor_kind": "measurement_period",
+      "title": "Growth with a higher margin.",
+      "tile": "32%",
+      "label": "FY MARGIN",
+      "summary": "Revenue reaches $350B; operating margin rises from 27% to 32%.",
+      "meaning": "These annual results give the outcome context for the year. They are period-wide measurements, not events that happened on December 31.",
+      "limit": "Company results do not isolate the contribution of a board member. Market conditions and many operating decisions affect performance.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "capex",
+      "entry_ids": [
+        "capex-2025-plan"
+      ],
+      "anchor_entry": "capex-2025-plan",
+      "anchor_kind": "statement",
+      "title": "A larger investment plan.",
+      "tile": "$75B",
+      "label": "FY2025 PLAN",
+      "summary": "The April CEO letter outlines approximately $75B in 2025 capex.",
+      "meaning": "Compare the original spending plan with a later, comparable capital-expenditure disclosure, while retaining any dated revisions.",
+      "limit": "Original April2025 plan is preserved. The later report records $91.4B FY2025 spending, but accounting basis, approximate tolerance and intervening revisions remain unresolved.",
+      "materiality_reason": "Material capital decision, company outcome, strategy change or contrary legal evidence."
+    },
+    {
+      "id": "wiz",
+      "entry_ids": [
+        "wiz-agreement-march2025"
+      ],
+      "anchor_entry": "wiz-agreement-march2025",
+      "anchor_kind": "event",
+      "title": "A $32B security agreement.",
+      "tile": "$32B",
+      "label": "AGREED",
+      "summary": "Alphabet agrees to acquire Wiz. Closing remains conditional in this source.",
+      "meaning": "A substantial capital-allocation decision aimed at cloud security.",
+      "limit": "Agreement in March2025; expected closing in 2026 is a separate forecast. No realized return is established.",
+      "materiality_reason": "Material acquisition agreement with execution conditions."
+    },
+    {
+      "id": "adtech",
+      "entry_ids": [
+        "ec-adtech-fine-september2025"
+      ],
+      "anchor_entry": "ec-adtech-fine-september2025",
+      "anchor_kind": "event",
+      "title": "Another regulatory cost.",
+      "tile": "€3B",
+      "label": "FINE",
+      "summary": "The EC imposes an adtech fine. Alphabet appeals; the $3.5B charge is not cash paid.",
+      "meaning": "The source records a September decision, a Q3 charge, a November appeal and Q4 bank guarantees.",
+      "limit": "Keep fine, accounting charge and cash payment distinct. This is historical issuer disclosure, not current case status.",
+      "materiality_reason": "Material contrary evidence with an accounting consequence."
+    },
+    {
+      "id": "2025-close",
+      "entry_ids": [
+        "capex-fy2025-outcome",
+        "revenue-fy2025",
+        "search-remedies-december2025"
+      ],
+      "anchor_entry": "capex-fy2025-outcome",
+      "anchor_kind": "measurement_period",
+      "title": "Investment rises. Scrutiny remains.",
+      "tile": "$91.4B",
+      "label": "FY2025 CAPEX",
+      "summary": "Annual capex reaches $91.4B. December brings Search remedies; a 2026 appeal follows.",
+      "meaning": "FY2025 revenue reaches $402.8B (+15%). Spending is a full-year measurement; the court judgment is separately dated December.",
+      "limit": "The $75B approximate plan and $91.4B reported spending lack a verified definition bridge and tolerance. No delivery verdict or investment return is inferred.",
+      "materiality_reason": "Annual outcome checkpoint with the material legal consequence kept visible."
+    },
+    {
+      "id": "results-2021",
+      "entry_ids": [
+        "revenue-fy2021"
+      ],
+      "anchor_entry": "revenue-fy2021",
+      "anchor_kind": "measurement_period",
+      "title": "Growth rebounds.",
+      "tile": "$257.6B",
+      "label": "FY2021 SALES",
+      "summary": "Revenue rises 41%. The prior year’s pandemic effect matters to the comparison.",
+      "meaning": "A company outcome baseline for the five-year record, with revenue measured over the full year.",
+      "limit": "The source attributes part of the growth comparison to COVID-19 affecting 2020 advertising revenue. Revenue growth alone is not efficiency or individual contribution.",
+      "materiality_reason": "Annual baseline with comparison context retained."
+    },
+    {
+      "id": "results-2022",
+      "entry_ids": [
+        "revenue-fy2022"
+      ],
+      "anchor_entry": "revenue-fy2022",
+      "anchor_kind": "measurement_period",
+      "title": "Growth slows.",
+      "tile": "$282.8B",
+      "label": "FY2022 SALES",
+      "summary": "Revenue rises 10%. Reported and constant-currency growth are different measures.",
+      "meaning": "Annual company outcome; period, measurement definition and relevant cost context are retained.",
+      "limit": "Revenue growth alone does not establish efficiency. The separately reported constant-currency figure is not substituted.",
+      "materiality_reason": "Annual checkpoint with relevant limits, not a delivery score."
+    },
+    {
+      "id": "results-2023",
+      "entry_ids": [
+        "revenue-fy2023",
+        "depreciation-estimate-2023"
+      ],
+      "anchor_entry": "revenue-fy2023",
+      "anchor_kind": "measurement_period",
+      "title": "Growth, with an accounting change.",
+      "tile": "$307.4B",
+      "label": "FY2023 SALES",
+      "summary": "Revenue rises 9%. Longer asset lives reduce annual depreciation by $3.9B.",
+      "meaning": "Annual company outcome; period, measurement definition and relevant cost context are retained.",
+      "limit": "Revenue growth alone does not establish efficiency. The depreciation change is not a cash saving or proof of better operations.",
+      "materiality_reason": "Annual checkpoint with relevant limits, not a delivery score."
+    },
+    {
+      "id": "mandiant",
+      "entry_ids": [
+        "mandiant-close-2022"
+      ],
+      "anchor_entry": "mandiant-close-2022",
+      "anchor_kind": "event",
+      "title": "Cloud adds Mandiant.",
+      "tile": "$6.1B",
+      "label": "PURCHASE",
+      "summary": "The acquisition closes on September 12. Its results enter Google Cloud from that date.",
+      "meaning": "A completed transaction changes the scope of subsequent Cloud results.",
+      "limit": "Completion and purchase price do not establish synergies or investment returns. Acquired operations change Google Cloud segment scope.",
+      "materiality_reason": "Material completed acquisition with scope implications."
+    },
+    {
+      "id": "workforce",
+      "entry_ids": [
+        "workforce-announcement-2023",
+        "severance-fy2023"
+      ],
+      "anchor_entry": "workforce-announcement-2023",
+      "anchor_kind": "event",
+      "title": "A workforce reduction.",
+      "tile": "People",
+      "label": "JAN2023",
+      "summary": "January brings a reduction announcement. Full-year severance charges reach $2.1B.",
+      "meaning": "The decision date and annual expense period are separate records.",
+      "limit": "The report does not establish savings or an individual’s contribution; no headcount is invented.",
+      "materiality_reason": "Material management action with its economic cost retained."
+    }
+  ],
+  "assessments": [
+    {
+      "id": "delivery_credibility",
+      "entry_ids": [
+        "capex-2025-plan",
+        "sustainable-choices-2022-commitment"
+      ],
+      "value": "Unresolved",
+      "summary": "Plans need comparable outcomes",
+      "caption": "Inspect the original commitment",
+      "meaning": "The original capex plan and a historical sustainability commitment remain visible with their target periods. Comparable outcomes and clear definitions are still required.",
+      "limit": "No delivery rate is inferred. The sustainable-choices outcome is unverified here; the approximate capex target lacks a documented tolerance and definition bridge."
+    },
+    {
+      "id": "disclosure_accountability",
+      "entry_ids": [
+        "controls-conclusion-2024",
+        "search-antitrust-ruling",
+        "shopping-fine-2024",
+        "search-remedies-december2025",
+        "ec-adtech-fine-september2025",
+        "water-goal-reported-2021"
+      ],
+      "value": "Mixed evidence",
+      "summary": "Legal consequences remain visible",
+      "caption": "Keep contrary evidence visible",
+      "meaning": "Management’s controls conclusion sits beside disclosed legal challenges and cash consequences.",
+      "limit": "Issuer disclosures and court events do not establish psychological honesty or an individual director’s culpability."
+    },
+    {
+      "id": "operating_efficiency",
+      "entry_ids": [
+        "operating-margin-fy2024",
+        "revenue-fy2024",
+        "operating-expenses-fy2024",
+        "revenue-fy2025",
+        "revenue-fy2021",
+        "revenue-fy2022",
+        "revenue-fy2023",
+        "depreciation-estimate-2023",
+        "workforce-announcement-2023",
+        "severance-fy2023"
+      ],
+      "value": "Results, with context",
+      "summary": "Growth is not the whole picture",
+      "caption": "Inspect periods and cost drivers",
+      "meaning": "Annual revenue and operating-margin evidence provide company outcome context. Different periods and accounting definitions remain explicit.",
+      "limit": "Operating expenses exclude cost of revenues; lower legal and office-space charges partly explain the change. Individual contribution is unproven."
+    },
+    {
+      "id": "capital_stewardship",
+      "entry_ids": [
+        "april-2024-buyback-authorization",
+        "repurchases-fy2024",
+        "dividends-fy2024",
+        "capex-fy2025-outcome",
+        "wiz-agreement-march2025",
+        "mandiant-close-2022"
+      ],
+      "value": "Returns unproven",
+      "summary": "More capital put to work",
+      "caption": "Separate the three questions",
+      "meaning": "The record separates board authorizations, cash distributions, acquisition agreements and reported capital spending.",
+      "limit": "Permission is not a spending promise. Cash distributions alone do not establish value creation or investment returns."
+    }
+  ]
+}

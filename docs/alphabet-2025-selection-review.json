@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "company": "Alphabet Inc.",
+  "review_status": "proposed",
+  "scope": {
+    "selection": "Five material calendar-2025 timeline candidates for a concise five-year view; offline source-page proposals, not aggregate claim IDs or human-reviewed ledger matches.",
+    "saved_text": "data/live-alphabet-2021-2025-additions/worker-0/inputs/17bffc8a60879e1453ba02a17b7accd2f9ca6877b9c718e5e292a114611aa6ab.text.json",
+    "saved_text_sha256": "baea2e111358b535e69d6b99f44b99032209d12637748d1567640d1b69cf042d",
+    "source_pdf_sha256": "3f497fbc4a6922ebe13e3a532b073ccf55a40f7ff69b11a2cf37aac13222e2cf",
+    "document_title": "Alphabet 2025 Annual Report",
+    "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf",
+    "available_extraction_chunks_read": [
+      "17bffc8a60879e1453ba02a17b7accd2f9ca6877b9c718e5e292a114611aa6ab.chunk-0.extraction.json"
+    ],
+    "bounded_revisit": "One substantive revisit found only chunk 0 (37 extracted claims). Full saved source pages supply later sections without waiting for extraction IDs.",
+    "source_date_limit": "Report covers FY2025 and includes April 2026 letter and later legal developments. Document discovery metadata is agent-reported and not independently verified; publication/statement date is not inferred from fiscal year.",
+    "quote_checks": 12,
+    "policy": "No network/model runs, no raw/core/UI edits. No current litigation assessment. No score or individual performance attribution."
+  },
+  "candidates": [
+    {
+      "id": "capex-actual-fy2025",
+      "title": "FY2025 capex: $91.4B",
+      "kind": "outcome",
+      "dimension": "capital_stewardship",
+      "event_date": {
+        "value": "2025",
+        "precision": "year"
+      },
+      "statement_date": null,
+      "summary": "Reported FY2025 capital expenditure was $91.4 billion, primarily technical infrastructure.",
+      "metric_definition": {
+        "name": "reported_capital_expenditures",
+        "definition": "Alphabet consolidated FY2025 capital expenditures; cash purchases of property and equipment shown separately in the GAAP cash-flow statement, primarily technical infrastructure and office facilities.",
+        "unit": "USD billion",
+        "value": "91.4",
+        "measurement_basis": "period_total",
+        "measurement_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "accounting_basis": "Cash spending presentation; table on physical page 59 reports purchases of property and equipment of USD 91,447 million. Rounded narrative retained; no automated cash/accrual bridge.",
+        "scope": "Alphabet consolidated"
+      },
+      "source_passage": {
+        "physical_page": 39,
+        "printed_page": 31,
+        "excerpt": "Capital expenditures, which primarily reflected investments in technical infrastructure, were $91.4 billion for the year\nended December 31, 2025.",
+        "verification": "exact_substring_of_saved_source_page",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=39"
+      },
+      "contrary_evidence": [
+        {
+          "physical_page": 45,
+          "printed_page": 37,
+          "excerpt": "Assets not yet in service are those that are not ready for their intended use, including assets in the process of construction\nor assembly, and consist primarily of technical infrastructure. The time frame from date of purchase to placement in\nservice of these assets may extend from months to years. For example, our data center construction projects are generally\nmulti-year projects with multiple phases, where we acquire land and buildings, construct buildings, and secure and install\nservers and network equipment.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=45"
+        },
+        {
+          "physical_page": 45,
+          "printed_page": 37,
+          "excerpt": "For the years ended December 31, 2024 and 2025, our depreciation on\nproperty and equipment was $15.3 billion and $21.1 billion, respectively.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=45"
+        },
+        {
+          "physical_page": 45,
+          "printed_page": 37,
+          "excerpt": "As of December 31, 2025, we have entered into leases primarily related to data centers that have not yet commenced with\nshort-term and long-term future lease payments of $5.8 billion and $52.7 billion, respectively. These leases will commence\nbetween 2026 and 2031 with non-cancelable lease terms primarily between one and 25 years.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=45"
+        },
+        {
+          "physical_page": 18,
+          "printed_page": 10,
+          "excerpt": "Our ability to scale our technical infrastructure is increasingly constrained by the availability of power, water, and land.\nFor example, energy supply is constrained globally due to the significant increase in demand for and limited availability\nof energy to power AI compute.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=18"
+        }
+      ],
+      "limitations": [
+        "Spending is not operational completion, AI profitability, efficiency or investment return.",
+        "Original approximately $75B plan has unresolved accounting basis and no reviewed approximation tolerance; actual is an observation, not automatic fulfillment.",
+        "No intervening FY2025 capex revisions were established by this bounded saved-source review. Preserve the original plan and add any later revised guidance as separate dated versions.",
+        "FY2025 source publication and letter dates are in 2026; do not pretend this result was known in April 2025 or at year-end 2025."
+      ],
+      "materiality_reason": "Largest direct continuation of the existing dated capex plan; surfaces substantially higher investment and future cost/commitment exposure.",
+      "recommended_comparable_match_status": {
+        "status": "not_comparable",
+        "target_entry": "capex-2025-plan",
+        "reason": "Strict v1 matching cannot pass while the original metric accounting basis and approximate tolerance are null and semantic review remains proposed. Metric-definition and review gates precede delivery judgment.",
+        "numeric_context_only": {
+          "original_plan_usd_billion": "75",
+          "reported_actual_usd_billion": "91.4",
+          "difference_usd_billion": "16.4",
+          "difference_percent_rounded": "21.9",
+          "interpretation": "Reported spending exceeds the stated original plan amount; this does not classify achievement or a miss."
+        },
+        "next_step": "Review plan/actual accounting definitions and an evidence-backed meaning of approximately; collect dated revised guidance. Never overwrite the original comparison."
+      },
+      "review_status": "proposed",
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "decision_by": null,
+        "individual_contribution": null
+      },
+      "supporting_passages": [
+        {
+          "physical_page": 45,
+          "printed_page": 37,
+          "excerpt": "During the years ended December 31, 2024 and 2025, we spent $52.5 billion and $91.4 billion on capital expenditures,\nrespectively.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=45"
+        }
+      ],
+      "original_plan_source": {
+        "evidence_file": "data/live-alphabet-2024/evidence.json",
+        "physical_page": 4,
+        "excerpt": "That’s why we plan to invest approximately\n$75 billion in 2025 in capital expenditures, launch\na first-ever project to power data centers using\nsmall modular nuclear reactors, and expand training\nthrough our $120 million AI Opportunity Fund.",
+        "verification": "exact_substring_of_saved_source_page",
+        "statement_date": {
+          "value": "2025-04",
+          "precision": "month"
+        },
+        "metric_definition": "Alphabet consolidated capital expenditure plan; USD billion, period total FY2025, cash/accrual basis unresolved, operator approximate, tolerance unknown",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_downloads/annualreport2024-web.pdf#page=4"
+      }
+    },
+    {
+      "id": "wiz-agreement-march2025",
+      "title": "March: $32B Wiz acquisition agreement",
+      "kind": "decision",
+      "dimension": "capital_stewardship",
+      "event_date": {
+        "value": "2025-03",
+        "precision": "month"
+      },
+      "statement_date": null,
+      "summary": "Alphabet signed a $32 billion all-cash Wiz acquisition agreement, subject to closing adjustments and approvals.",
+      "metric_definition": {
+        "name": "announced_wiz_transaction_consideration",
+        "definition": "Agreed all-cash transaction price subject to closing adjustments; not FY2025 acquisition cash paid.",
+        "unit": "USD billion",
+        "value": "32.0",
+        "measurement_basis": "transaction_terms",
+        "scope": "Wiz acquisition by Alphabet"
+      },
+      "source_passage": {
+        "physical_page": 47,
+        "printed_page": 39,
+        "excerpt": "In March 2025, we entered into a definitive agreement to acquire Wiz, Inc. (“Wiz”), a leading cloud security platform, for\n$32.0 billion, subject to closing adjustments, in an all-cash transaction. The acquisition of Wiz is expected to close in 2026,\nsubject to customary closing conditions, including the receipt of regulatory approvals.",
+        "verification": "exact_substring_of_saved_source_page",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=47"
+      },
+      "contrary_evidence": [],
+      "limitations": [
+        "This is an agreement event; the source expects a 2026 close subject to conditions. Do not label acquisition completed in 2025.",
+        "No management/director contribution, integration success or investment return is established.",
+        "The source repeats the acquisition on physical pages 39/83; these are not independent corroboration."
+      ],
+      "materiality_reason": "Material strategic capital commitment for Cloud security.",
+      "recommended_comparable_match_status": {
+        "status": "not_a_delivery_promise",
+        "reason": "Signing decision and agreed consideration are observed; closing expectation is conditional and separate from capex."
+      },
+      "review_status": "proposed",
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "decision_by": "Company management; no named individual attribution established",
+        "individual_contribution": null
+      }
+    },
+    {
+      "id": "buyback-authorization-april2025",
+      "title": "April: board adds $70B buyback capacity",
+      "kind": "authorization",
+      "dimension": "capital_stewardship",
+      "event_date": {
+        "value": "2025-04",
+        "precision": "month"
+      },
+      "statement_date": null,
+      "summary": "The collective board authorized another $70 billion share-repurchase program; company FY2025 repurchases totaled $45.4 billion and $69.5 billion remained available at year-end.",
+      "metric_definition": {
+        "name": "additional_buyback_authorization_capacity",
+        "definition": "Additional authorization for Class A and C share repurchases; not actual cash spent or a spending target.",
+        "unit": "USD billion",
+        "value": "70.0",
+        "measurement_basis": "authorization_capacity",
+        "scope": "Alphabet Class A and C shares"
+      },
+      "source_passage": {
+        "physical_page": 46,
+        "printed_page": 38,
+        "excerpt": "In April 2025, the company’s Board of Directors authorized an additional $70.0 billion share repurchase\nprogram for its Class A and Class C shares. As of December 31, 2025, $69.5 billion remained available for Class A and\nClass C share repurchases.",
+        "verification": "exact_substring_of_saved_source_page",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=46"
+      },
+      "contrary_evidence": [
+        {
+          "physical_page": 46,
+          "printed_page": 38,
+          "excerpt": "During 2025, we repurchased and subsequently retired 240 million shares for $45.4 billion.",
+          "verification": "exact_substring_of_saved_source_page",
+          "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=46"
+        }
+      ],
+      "limitations": [
+        "FY2025 repurchases are a separate company outcome and cannot be assigned wholly to this new authorization.",
+        "No expiry means year-end utilization is not a delivery deadline.",
+        "Buybacks alone do not demonstrate returns or offset dilution; repurchase amounts/retirement accounting and cash-flow payments differ."
+      ],
+      "materiality_reason": "Explicit collective board decision and material competing use of capital alongside AI investment.",
+      "recommended_comparable_match_status": {
+        "status": "not_a_delivery_promise",
+        "reason": "Authorization permits purchases; it does not promise full utilization or establish comparable fulfillment."
+      },
+      "review_status": "proposed",
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "decision_by": "Board collectively",
+        "individual_contribution": null
+      }
+    },
+    {
+      "id": "search-remedies-december2025",
+      "title": "December: Search remedies judgment",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "event_date": {
+        "value": "2025-12",
+        "precision": "month"
+      },
+      "statement_date": null,
+      "summary": "Final Search judgment imposed distribution restrictions and requirements to share certain data and offer syndication services to competitors.",
+      "metric_definition": null,
+      "source_passage": {
+        "physical_page": 85,
+        "printed_page": 77,
+        "excerpt": "A final judgment was\nentered in December 2025, which, among other things, imposes restrictions on how Google distributes its services and\nrequires Google to share certain search data with and offer syndication services to certain competitors. In January 2026,\nwe appealed the final judgment and moved to pause implementation of certain remedies. In February 2026, the DOJ and\nstate Attorneys General also appealed.",
+        "verification": "exact_substring_of_saved_source_page",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=85"
+      },
+      "contrary_evidence": [],
+      "limitations": [
+        "2026 appeals and request to pause implementation are later source context; keep them separately dated, not 2025 events.",
+        "Historical issuer account; final judgment does not mean all appeals or litigation are resolved.",
+        "Do not infer personal culpability, compliance quality, a universal trust verdict or exact financial impact."
+      ],
+      "materiality_reason": "Material constraint on the core Search business; adverse follow-up to the August 2024 ruling.",
+      "recommended_comparable_match_status": {
+        "status": "not_a_delivery_promise",
+        "reason": "Court-imposed legal event, not management target. The earlier expected second-half-2025 timing can be contextualized but is a third-party forecast, not a delivery verdict."
+      },
+      "review_status": "proposed",
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "decision_by": null,
+        "individual_contribution": null
+      }
+    },
+    {
+      "id": "ec-adtech-fine-september2025",
+      "title": "September: €3B EC adtech fine",
+      "kind": "challenge",
+      "dimension": "disclosure_accountability",
+      "event_date": {
+        "value": "2025-09",
+        "precision": "month"
+      },
+      "statement_date": null,
+      "summary": "EC issued an adtech decision imposing a €3 billion fine; Alphabet recognized a $3.5 billion Q3 charge, appealed in November and supplied Q4 bank guarantees in lieu of cash payment.",
+      "metric_definition": {
+        "name": "ec_adtech_fine_and_accounting_charge",
+        "definition": "Two distinct amounts: euro-denominated imposed fine and USD financial-statement charge. Neither is cash settlement; normalize separately.",
+        "amounts": [
+          {
+            "name": "imposed_fine",
+            "unit": "EUR billion",
+            "value": "3.0"
+          },
+          {
+            "name": "recognized_charge",
+            "unit": "USD billion",
+            "value": "3.5"
+          }
+        ],
+        "measurement_basis": "legal_decision_and_period_charge",
+        "scope": "EC Google adtech matter"
+      },
+      "source_passage": {
+        "physical_page": 86,
+        "printed_page": 78,
+        "excerpt": "Further, in September 2025, the EC announced its decision that Google had infringed European competition laws\nthrough “self-preferencing” practices on the buy-side and the sell-side relating to Google’s advertising technology\nbusiness. The EC decision imposed a €3.0 billion fine and directed Google to cease and desist the alleged\n“self-preferencing” practices. We appealed the ruling in November 2025. We recognized a charge of $3.5 billion in the\nthird quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment.",
+        "verification": "exact_substring_of_saved_source_page",
+        "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/Alphabet-GOOG-_AR_2025_WO2_TRD_WR.pdf#page=86"
+      },
+      "contrary_evidence": [],
+      "limitations": [
+        "Fine, charge, appeal and bank guarantee are separate dated facts; do not invent an FX conversion or classify the charge as cash paid.",
+        "Appeal unresolved in the historical source; no current legal verdict is implied.",
+        "This EC matter is distinct from the US adtech mixed ruling/remedies and from Search litigation."
+      ],
+      "materiality_reason": "Large adverse legal finding and material recognized charge, balanced by appeal and payment-form disclosure.",
+      "recommended_comparable_match_status": {
+        "status": "not_a_delivery_promise",
+        "reason": "Legal event/accounting effect, not management promise; adverse evidence must remain visible."
+      },
+      "review_status": "proposed",
+      "attribution": {
+        "outcome_entity": "Alphabet Inc.",
+        "decision_by": null,
+        "individual_contribution": null
+      }
+    }
+  ],
+  "selection_notes": [
+    "Capex is the period result; the other four entries are dated decisions/legal events. Link their separate source passages rather than create an overall credibility score.",
+    "No separate organization-change event was selected: this bounded review did not establish a comparably material, explicitly dated 2025 internal reorganization. Acquisition signing is not internal integration completion.",
+    "The December 2025 Intersect $4.8B cash-plus-debt agreement is a separate capital decision on physical pages 47/83; it can replace Wiz if the stakeholder focus is energy infrastructure. Never merge the two into one economic promise.",
+    "For a shorter 2025 landing view prioritize capex, Search judgment and one capital decision; retain the EC adverse event in the material exception register even if it is not a featured card."
+  ]
+}

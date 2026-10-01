@@ -1,0 +1,1821 @@
+{
+  "schema_version": 1,
+  "company": "Alphabet Inc.",
+  "sources": [
+    {
+      "id": "alphabet2024",
+      "path": "../../../data/live-alphabet-2024/evidence.json",
+      "sha256": "0580461ab1062107c7c45535f27d0be36adab4db36980c176c55795ef2fb9747"
+    },
+    {
+      "id": "alphabet2025",
+      "path": "../../../data/live-alphabet-2021-2025-additions/evidence.json",
+      "sha256": "010b9c7b02fdb8a2741c3936add7ed10ac95e177c47f08980f47082695646c1c"
+    },
+    {
+      "id": "alphabet2025supplement",
+      "path": "../../../data/derived/alphabet-source-supplement-v1/evidence.json",
+      "sha256": "c7b0753cb84cccd2c77888c407e2916ee23e5c5cccbdab1dc2509667cc953542"
+    },
+    {
+      "id": "alphabet2021",
+      "path": "../../../data/live-alphabet-2021-recovery/evidence.json",
+      "sha256": "085417f783ee96f24e7e69297c68f2ae3180c4f725494ebf409df65cf0e17ee5"
+    },
+    {
+      "id": "alphabet2022and2023",
+      "path": "../../../data/live-alphabet-2022-2023-recovery/evidence.json",
+      "sha256": "5f9ff177db1d8780b81219491bd9995d8e6d9ed15d02d28141ab3a27f08ce06e"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "alphabet.capital_expenditures.plan.v1",
+      "definition": "Capital expenditures in the CEO letter; cash versus accrual definition unresolved.",
+      "unit": "USD billion",
+      "accounting_basis": null,
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    },
+    {
+      "id": "alphabet.repurchase_authorization.v1",
+      "definition": "Ceiling of additional authorized Class A and C repurchases; not cash spent.",
+      "unit": "USD billion",
+      "accounting_basis": "board_authorization",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "authorization_ceiling"
+    },
+    {
+      "id": "alphabet.repurchase_cash.v1",
+      "definition": "Reported amount spent on Class A and Class C repurchases during the fiscal year.",
+      "unit": "USD billion",
+      "accounting_basis": "reported_repurchase_amount",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    },
+    {
+      "id": "alphabet.dividend_cash.v1",
+      "definition": "Total cash dividends paid to Class A, B and C stockholders in the fiscal year.",
+      "unit": "USD billion",
+      "accounting_basis": "cash_paid",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    },
+    {
+      "id": "alphabet.operating_margin.v1",
+      "definition": "Consolidated operating income divided by consolidated revenue.",
+      "unit": "percent",
+      "accounting_basis": "US_GAAP",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_ratio"
+    },
+    {
+      "id": "alphabet.operating_expense.v1",
+      "definition": "Consolidated operating expenses, excluding cost of revenues.",
+      "unit": "USD billion",
+      "accounting_basis": "US_GAAP",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    },
+    {
+      "id": "alphabet.employees.v1",
+      "definition": "Employees reported at the fiscal year end.",
+      "unit": "employees",
+      "accounting_basis": "reported_employee_count",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "point_in_time"
+    },
+    {
+      "id": "alphabet.content_licensing_obligation.v1",
+      "definition": "Future fixed or minimum guaranteed content licensing commitments outstanding.",
+      "unit": "USD billion",
+      "accounting_basis": "contractual_commitment",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "point_in_time"
+    },
+    {
+      "id": "alphabet.capital_expenditures.reported.v1",
+      "definition": "Reported annual capital expenditure spending in the annual report narrative; rounded to USD billions.",
+      "unit": "USD billion",
+      "accounting_basis": "reported_capex_spending",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    },
+    {
+      "id": "alphabet.revenue.v1",
+      "definition": "Consolidated annual revenue reported under US GAAP, narrative amounts rounded to USD billions; not a run rate or segment revenue.",
+      "unit": "USD billion",
+      "accounting_basis": "US_GAAP",
+      "scope": "Alphabet consolidated",
+      "measurement_basis": "period_total"
+    }
+  ],
+  "entries": [
+    {
+      "id": "capex-2025-plan",
+      "economic_id": "capex-2025-plan",
+      "kind": "promise",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Approximately $75 billion of FY2025 capital expenditure planned",
+      "dimension": "delivery_credibility",
+      "evidence_refs": [
+        "alphabet2024:ff3d0adb5b06f83a55198f15a27d69eb59337b0993331bf116d84b0261d1df78"
+      ],
+      "grouping_rationale": "A discrete capex commitment within a passage containing three different plans; shared wording does not merge different deliverables.",
+      "metric_id": "alphabet.capital_expenditures.plan.v1",
+      "value": {
+        "operator": "approximate",
+        "amount": "75",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": {
+          "value": "2025-04",
+          "precision": "month",
+          "basis": "Letter heading on physical page 3 says April 2025; page 4 continues that letter. The container publication date is not substituted.",
+          "evidence_refs": [
+            "alphabet2024:b331e5e88e13b3aa416e2543d60607f6db97ffae67113018027846b23179cf3d"
+          ]
+        },
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "label": "FY2025",
+          "basis": "Calendar fiscal year stated in the cited passage and saved page context.",
+          "evidence_refs": [
+            "alphabet2024:ff3d0adb5b06f83a55198f15a27d69eb59337b0993331bf116d84b0261d1df78"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Sundar, CEO letter",
+        "decision_by": "management",
+        "individuals": [
+          {
+            "name": "Sundar",
+            "role": "Letter signatory",
+            "tenure_start": null,
+            "tenure_end": null,
+            "relationship": "statement",
+            "evidence_refs": [
+              "alphabet2024:ff3d0adb5b06f83a55198f15a27d69eb59337b0993331bf116d84b0261d1df78"
+            ],
+            "rationale": "The saved page is signed Sundar. This records authorship, not personal responsibility for company outcomes; exact identity/role tenure requires further evidence."
+          }
+        ]
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "The quote gives no cash/accrual definition or tolerance for approximately.",
+        "This evidence pack contains no matched FY2025 outcome; elapsed calendar time alone cannot establish delivery or a miss.",
+        "Spending to plan would not establish investment returns or individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "A discrete capex commitment within a passage containing three different plans; shared wording does not merge different deliverables."
+        }
+      ]
+    },
+    {
+      "id": "nuclear-project-plan",
+      "economic_id": "nuclear-project-plan",
+      "kind": "promise",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Plan to launch a small modular reactor data-center power project",
+      "dimension": "delivery_credibility",
+      "evidence_refs": [
+        "alphabet2024:8b77eca9e036a291fe04b36b0c0f31019e3375cc231afb7b1000e522add72c25"
+      ],
+      "grouping_rationale": "Separate deliverable in the same quotation as capex and training. Do not count the same passage as independent corroboration.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": {
+          "value": "2025-04",
+          "precision": "month",
+          "basis": "Letter heading on physical page 3 says April 2025; page 4 continues that letter. The container publication date is not substituted.",
+          "evidence_refs": [
+            "alphabet2024:b331e5e88e13b3aa416e2543d60607f6db97ffae67113018027846b23179cf3d"
+          ]
+        },
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Sundar, CEO letter",
+        "decision_by": "management",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "No verified commissioning deadline or completion criterion. The 2025 capex modifier is not automatically applied to this project.",
+        "No comparable completion evidence in this pack."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Separate deliverable in the same quotation as capex and training. Do not count the same passage as independent corroboration."
+        }
+      ]
+    },
+    {
+      "id": "training-expansion-plan",
+      "economic_id": "training-expansion-plan",
+      "kind": "promise",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Plan to expand training through the AI Opportunity Fund",
+      "dimension": "delivery_credibility",
+      "evidence_refs": [
+        "alphabet2024:50eb88211f42259ff0a966df5fec479bf210796af339e0f9e1ecd7a16f4fa1ba"
+      ],
+      "grouping_rationale": "Training expansion is distinct from capex; the $120 million fund size is not an amount promised to be spent by a deadline.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": {
+          "value": "2025-04",
+          "precision": "month",
+          "basis": "Letter heading on physical page 3 says April 2025; page 4 continues that letter. The container publication date is not substituted.",
+          "evidence_refs": [
+            "alphabet2024:b331e5e88e13b3aa416e2543d60607f6db97ffae67113018027846b23179cf3d"
+          ]
+        },
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Sundar, CEO letter",
+        "decision_by": "management",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "No normalized delivery amount, deadline or outcome; fund size is retained only in original evidence."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Training expansion is distinct from capex; the $120 million fund size is not an amount promised to be spent by a deadline."
+        }
+      ]
+    },
+    {
+      "id": "future-dividend-intention",
+      "economic_id": "future-dividend-intention",
+      "kind": "conditional_intention",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Future quarterly dividend intention, subject to board approval",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2024:e0c80ab2dfce3ab56baaea1f62b78be8812a92bfd78d9d76a7de1575d849069b",
+        "alphabet2024:ecf2abd658078c7904b21d60bccb133508149f10f53a6601f23bb1e7e76d1f85",
+        "alphabet2024:7027ce4747de43f3122e7ec3319ab655a6dc07d8729bfce2944d875a00b792f7"
+      ],
+      "grouping_rationale": "These three passages repeat one conditional economic intention in the same report. Original classifications (two measurable promises, one aspiration) remain attached; normalize to conditional intention because no fixed amount or deadline is promised.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "board",
+        "individuals": []
+      },
+      "conditions": [
+        "Every payment remains subject to board review and approval in its sole discretion."
+      ],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Three extraction records are one intention, not three promises or independent corroborations.",
+        "Past payments do not establish future board approvals."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "These three passages repeat one conditional economic intention in the same report. Original classifications (two measurable promises, one aspiration) remain attached; normalize to conditional intention because no fixed amount or deadline is promised."
+        }
+      ]
+    },
+    {
+      "id": "april-2024-buyback-authorization",
+      "economic_id": "april-2024-buyback-authorization",
+      "kind": "authorization",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Board authorizes up to an additional $70 billion of repurchases",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2024:a4063f76d0d0cb62885afdfc5654541f933150ed17f471b8443a899542cfc59e",
+        "alphabet2024:0089984fbe10352cdd454aa80510790044df1e19b86338785add78042933ae8c"
+      ],
+      "grouping_rationale": "Both passages describe the same April 2024 authorization. The $44.7 billion remaining at year end is a separate balance, not its date or a spending deadline.",
+      "metric_id": "alphabet.repurchase_authorization.v1",
+      "value": {
+        "operator": "lte",
+        "amount": "70",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-04",
+          "precision": "month",
+          "basis": "Both excerpts explicitly date the authorization to April 2024.",
+          "evidence_refs": [
+            "alphabet2024:a4063f76d0d0cb62885afdfc5654541f933150ed17f471b8443a899542cfc59e",
+            "alphabet2024:0089984fbe10352cdd454aa80510790044df1e19b86338785add78042933ae8c"
+          ]
+        },
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "board",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Authorization is permission, not a promise to spend the whole amount.",
+        "Year-end remaining capacity and annual cash repurchases must not be subtracted from this authorization without a roll-forward."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Both passages describe the same April 2024 authorization. The $44.7 billion remaining at year end is a separate balance, not its date or a spending deadline."
+        }
+      ]
+    },
+    {
+      "id": "repurchases-fy2024",
+      "economic_id": "repurchases-fy2024",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Company repurchased $62 billion of shares in FY2024",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2024:64f0e8d2ef60bf3032e35c6be9157af485dd7d47b8b78db58bdd0d6bd2346393",
+        "alphabet2024:0089984fbe10352cdd454aa80510790044df1e19b86338785add78042933ae8c"
+      ],
+      "grouping_rationale": "Both passages report the same fiscal-year repurchase total. Claim 76 also supports the distinct board authorization.",
+      "metric_id": "alphabet.repurchase_cash.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "62",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "label": "FY2024",
+          "basis": "Calendar fiscal year stated in the cited passage and saved page context.",
+          "evidence_refs": [
+            "alphabet2024:64f0e8d2ef60bf3032e35c6be9157af485dd7d47b8b78db58bdd0d6bd2346393",
+            "alphabet2024:0089984fbe10352cdd454aa80510790044df1e19b86338785add78042933ae8c"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Company cash distribution does not establish investment returns.",
+        "Annual repurchases cannot be assigned wholly to the April authorization."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Both passages report the same fiscal-year repurchase total. Claim 76 also supports the distinct board authorization."
+        }
+      ]
+    },
+    {
+      "id": "dividends-fy2024",
+      "economic_id": "dividends-fy2024",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Company paid $7.4 billion of dividends in FY2024, starting in June",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2024:8988e571dc421aed38c4f4d7448924b10a0e71ab7e079d490512538669a706fb",
+        "alphabet2024:b7cdbafa3d0f5f0fcdd7da076849245f7a3641cb6ed0d8b6f66fc7ce2e4af6ff"
+      ],
+      "grouping_rationale": "The share-class payments and stated total refer to one annual distribution; June is the first-payment event, not the measurement period.",
+      "metric_id": "alphabet.dividend_cash.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "7.4",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-06",
+          "precision": "month",
+          "basis": "First payments explicitly dated to June in claim 54; no exact payment day is asserted.",
+          "evidence_refs": [
+            "alphabet2024:b7cdbafa3d0f5f0fcdd7da076849245f7a3641cb6ed0d8b6f66fc7ce2e4af6ff"
+          ]
+        },
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "label": "FY2024",
+          "basis": "Calendar fiscal year stated in the cited passage and saved page context.",
+          "evidence_refs": [
+            "alphabet2024:8988e571dc421aed38c4f4d7448924b10a0e71ab7e079d490512538669a706fb",
+            "alphabet2024:b7cdbafa3d0f5f0fcdd7da076849245f7a3641cb6ed0d8b6f66fc7ce2e4af6ff"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "The FY2024 total does not show each future quarter or approve future payments."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "The share-class payments and stated total refer to one annual distribution; June is the first-payment event, not the measurement period."
+        }
+      ]
+    },
+    {
+      "id": "content-licensing-obligations",
+      "economic_id": "content-licensing-obligations",
+      "kind": "obligation",
+      "change": "original",
+      "supersedes": null,
+      "summary": "$8.8 billion of future fixed or minimum content licensing commitments at year end",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2024:18f1131de13e872f401993aba94f4a446fa7588dab7b1ab053e2d1ff3bfd56c7"
+      ],
+      "grouping_rationale": "Existing contractual obligations are a balance disclosure, not a new discretionary management delivery pledge.",
+      "metric_id": "alphabet.content_licensing_obligation.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "8.8",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "label": "Year-end balance",
+          "basis": "Commitments outstanding as of December 31, 2024.",
+          "evidence_refs": [
+            "alphabet2024:18f1131de13e872f401993aba94f4a446fa7588dab7b1ab053e2d1ff3bfd56c7"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Only the majority is payable quarterly through Q1 2030; applying that deadline to all $8.8 billion would overstate the source."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Existing contractual obligations are a balance disclosure, not a new discretionary management delivery pledge."
+        }
+      ]
+    },
+    {
+      "id": "operating-margin-fy2024",
+      "economic_id": "operating-margin-fy2024",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Company operating margin was 32% in FY2024",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2024:22cac06c12be9fbada35cb3951145748fd323c16b7cd0f8eb9135152aa2cb597"
+      ],
+      "grouping_rationale": "Select one metric from the multi-metric table; preserve the supplied-layout snapshot and full page column headers.",
+      "metric_id": "alphabet.operating_margin.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "32",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "label": "FY2024",
+          "basis": "Calendar fiscal year stated in the cited passage and saved page context.",
+          "evidence_refs": [
+            "alphabet2024:22cac06c12be9fbada35cb3951145748fd323c16b7cd0f8eb9135152aa2cb597"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Company performance, without attribution to an individual director.",
+        "Table also shows 27% in 2023; the 5% change column is a five percentage-point difference, not a 5% relative increase."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Select one metric from the multi-metric table; preserve the supplied-layout snapshot and full page column headers."
+        }
+      ]
+    },
+    {
+      "id": "operating-expenses-fy2024",
+      "economic_id": "operating-expenses-fy2024",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Company operating expenses were $91.3 billion in FY2024",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2024:30833f661b7dae38579632823de3dcab1213c5267a5f31d94f2312c6fab58862"
+      ],
+      "grouping_rationale": "Operating expenses exclude cost of revenues and must not be compared with capex or total operating costs.",
+      "metric_id": "alphabet.operating_expense.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "91.3",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "label": "FY2024",
+          "basis": "Calendar fiscal year stated in the cited passage and saved page context.",
+          "evidence_refs": [
+            "alphabet2024:30833f661b7dae38579632823de3dcab1213c5267a5f31d94f2312c6fab58862"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Lower legal and office-space charges partly offset depreciation, compensation and services cost increases.",
+        "An expense increase by itself is not an efficiency verdict."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Operating expenses exclude cost of revenues and must not be compared with capex or total operating costs."
+        }
+      ]
+    },
+    {
+      "id": "employees-year-end-2024",
+      "economic_id": "employees-year-end-2024",
+      "kind": "context",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Company reported 183,323 employees at year end",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2024:0774a7a780d6aa7dad1d64ca5a86f1e75456bc0e1fe7de02b8cdd93283947564",
+        "alphabet2024:69df3ad746af89d969e39b5d5a1dd176cf76899dfea0f67e889e45810340ee37"
+      ],
+      "grouping_rationale": "Two report mentions of the same year-end headcount; not separate company events.",
+      "metric_id": "alphabet.employees.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "183323",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "label": "Year-end headcount",
+          "basis": "Both excerpts report employees as of December 31, 2024.",
+          "evidence_refs": [
+            "alphabet2024:0774a7a780d6aa7dad1d64ca5a86f1e75456bc0e1fe7de02b8cdd93283947564",
+            "alphabet2024:69df3ad746af89d969e39b5d5a1dd176cf76899dfea0f67e889e45810340ee37"
+          ]
+        },
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Headcount is context, not output per employee or individual productivity."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Two report mentions of the same year-end headcount; not separate company events."
+        }
+      ]
+    },
+    {
+      "id": "controls-conclusion-2024",
+      "economic_id": "controls-conclusion-2024",
+      "kind": "context",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Management concluded internal financial reporting controls were effective at year end",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2024:8a55f46e67bf8dddd91e2269b4e32126951185d84d2db548ae9ea418ddf6af48"
+      ],
+      "grouping_rationale": "A management disclosure about controls; it does not establish psychological honesty or delivery credibility.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-12-31",
+          "precision": "day",
+          "basis": "Date of the assessed controls, not the later statement date.",
+          "evidence_refs": [
+            "alphabet2024:8a55f46e67bf8dddd91e2269b4e32126951185d84d2db548ae9ea418ddf6af48"
+          ]
+        },
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "management",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "This is management’s conclusion, not a universal trust rating."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "A management disclosure about controls; it does not establish psychological honesty or delivery credibility."
+        }
+      ]
+    },
+    {
+      "id": "search-antitrust-ruling",
+      "economic_id": "search-antitrust-ruling",
+      "kind": "challenge",
+      "change": "original",
+      "supersedes": null,
+      "summary": "August 2024 Search antitrust ruling with remedies unresolved in the pack",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2024:7bb6ef9d16c355b71296afcc5a41b3d2d4baba12512207ffc69fdffcce9c35c4"
+      ],
+      "grouping_rationale": "Claim 71 explicitly supports the ruling and date. Claim 25’s quote supports remedies only; its broader original summary is not used as ruling evidence.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-08",
+          "precision": "month",
+          "basis": "The excerpt explicitly dates the court ruling to August 2024.",
+          "evidence_refs": [
+            "alphabet2024:7bb6ef9d16c355b71296afcc5a41b3d2d4baba12512207ffc69fdffcce9c35c4"
+          ]
+        },
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null,
+        "completion": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Company legal event; no individual misconduct or director attribution inferred.",
+        "The saved pack is historical and does not establish current litigation status."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Claim 71 explicitly supports the ruling and date. Claim 25’s quote supports remedies only; its broader original summary is not used as ruling evidence."
+        }
+      ]
+    },
+    {
+      "id": "revenue-fy2024",
+      "economic_id": "revenue-fy2024",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2024 revenue $350.0 billion, up 14%",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2024:2e2718a0d44b173ad411b4700b28d48dc0798f8ec1206858079b6f5f39f185f1"
+      ],
+      "grouping_rationale": "Distinct dated event or fiscal-year outcome; repeated topic alone does not establish economic identity.",
+      "metric_id": "alphabet.revenue.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "350.0",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "label": "FY2024",
+          "basis": "Annual period in quoted passage and saved page.",
+          "evidence_refs": [
+            "alphabet2024:2e2718a0d44b173ad411b4700b28d48dc0798f8ec1206858079b6f5f39f185f1"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Proposed interpretation; company event does not establish individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Source passage and its physical page context reviewed; no human approval asserted."
+        }
+      ]
+    },
+    {
+      "id": "shopping-fine-2024",
+      "economic_id": "shopping-fine-2024",
+      "kind": "challenge",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Shopping fine upheld in September 2024; $3.0B paid in Q3",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2024:e3419fab87a788b5d1a031d62682ccfe4a70e2f99a338548198020f022a8efcb"
+      ],
+      "grouping_rationale": "Distinct dated event or fiscal-year outcome; repeated topic alone does not establish economic identity.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-09",
+          "precision": "month",
+          "basis": "Month explicitly stated in cited passage.",
+          "evidence_refs": [
+            "alphabet2024:e3419fab87a788b5d1a031d62682ccfe4a70e2f99a338548198020f022a8efcb"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Proposed interpretation; company event does not establish individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Source passage and its physical page context reviewed; no human approval asserted."
+        }
+      ]
+    },
+    {
+      "id": "gemini-organization-2024",
+      "economic_id": "gemini-organization-2024",
+      "kind": "decision",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Gemini app team joins Google DeepMind in October2024",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2024:aa9421637a7d7fbabe105f4f20f8e8b8cf8fd4961e6293d6937da13817f46191"
+      ],
+      "grouping_rationale": "Distinct dated event or fiscal-year outcome; repeated topic alone does not establish economic identity.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2024-10",
+          "precision": "month",
+          "basis": "Month explicitly stated in cited passage.",
+          "evidence_refs": [
+            "alphabet2024:aa9421637a7d7fbabe105f4f20f8e8b8cf8fd4961e6293d6937da13817f46191"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "management",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Proposed interpretation; company event does not establish individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Source passage and its physical page context reviewed; no human approval asserted."
+        }
+      ]
+    },
+    {
+      "id": "capex-fy2025-outcome",
+      "economic_id": "capex-fy2025-outcome",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Reported FY2025 capital expenditure of $91.4 billion",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2025:f7894dacd75515ab8b2805326e523a3a817773261c4d5dd85b6205963d5b086e"
+      ],
+      "grouping_rationale": "Distinct dated corporate event or annual outcome; original plan and later outcomes remain separate entries.",
+      "metric_id": "alphabet.capital_expenditures.reported.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "91.4",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "label": "FY2025",
+          "basis": "Annual expenditure/revenue period explicitly stated in source and page context.",
+          "evidence_refs": [
+            "alphabet2025:f7894dacd75515ab8b2805326e523a3a817773261c4d5dd85b6205963d5b086e"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Narrative amount is rounded; exact cash-flow purchases of property and equipment require a reviewed bridge to the plan definition.",
+        "Annual spending does not establish timely deployment, investment returns or individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Quoted source and full page reviewed; interpretation remains proposed, with no individual attribution."
+        }
+      ]
+    },
+    {
+      "id": "revenue-fy2025",
+      "economic_id": "revenue-fy2025",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2025 revenue of $402.8 billion, up 15%",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2025:14695ea71f6bb46762ba6ac1cfe632647cbf5ef86994b56f32d247617a98df34"
+      ],
+      "grouping_rationale": "Distinct dated corporate event or annual outcome; original plan and later outcomes remain separate entries.",
+      "metric_id": "alphabet.revenue.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "402.8",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "label": "FY2025",
+          "basis": "Annual expenditure/revenue period explicitly stated in source and page context.",
+          "evidence_refs": [
+            "alphabet2025:14695ea71f6bb46762ba6ac1cfe632647cbf5ef86994b56f32d247617a98df34"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Quoted source and full page reviewed; interpretation remains proposed, with no individual attribution."
+        }
+      ]
+    },
+    {
+      "id": "wiz-agreement-march2025",
+      "economic_id": "wiz-agreement-march2025",
+      "kind": "decision",
+      "change": "original",
+      "supersedes": null,
+      "summary": "March 2025 agreement to acquire Wiz for $32B",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2025:9bbf3889d7332b97757fd52c218dd37cefa443fefcb8f0eca5aa02182043fe13"
+      ],
+      "grouping_rationale": "Distinct dated corporate event or annual outcome; original plan and later outcomes remain separate entries.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2025-03",
+          "precision": "month",
+          "basis": "Month explicitly stated in saved source quotation.",
+          "evidence_refs": [
+            "alphabet2025:9bbf3889d7332b97757fd52c218dd37cefa443fefcb8f0eca5aa02182043fe13"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "company",
+        "individuals": []
+      },
+      "conditions": [
+        "Expected closing in 2026 is subject to customary conditions and regulatory approvals."
+      ],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Agreement is not completed acquisition; the historical source does not establish post-close returns."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Quoted source and full page reviewed; interpretation remains proposed, with no individual attribution."
+        }
+      ]
+    },
+    {
+      "id": "search-remedies-december2025",
+      "economic_id": "search-remedies-december2025",
+      "kind": "challenge",
+      "change": "original",
+      "supersedes": null,
+      "summary": "December 2025 Search remedies judgment, followed by January 2026 appeal",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2025:207953d15d098a0b11b2de79f4a5b49ed268f019928e3992a8fbafd0b82f5b81"
+      ],
+      "grouping_rationale": "Distinct dated corporate event or annual outcome; original plan and later outcomes remain separate entries.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2025-12",
+          "precision": "month",
+          "basis": "Month explicitly stated in saved source quotation.",
+          "evidence_refs": [
+            "alphabet2025:207953d15d098a0b11b2de79f4a5b49ed268f019928e3992a8fbafd0b82f5b81"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Later appeals retain their own 2026 dates; the December judgment is not final resolution of all litigation.",
+        "Historical issuer account; no current legal assessment or personal culpability inferred."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Quoted source and full page reviewed; interpretation remains proposed, with no individual attribution."
+        }
+      ]
+    },
+    {
+      "id": "ec-adtech-fine-september2025",
+      "economic_id": "ec-adtech-fine-september2025",
+      "kind": "challenge",
+      "change": "original",
+      "supersedes": null,
+      "summary": "EC issued an adtech decision imposing a €3 billion fine; Alphabet recognized a $3.5 billion Q3 charge, appealed in November and supplied Q4 bank guarantees in lieu of cash payment.",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2025supplement:5470934a3422bbffe7bbca62de320b7056e253c387769bb3678668f5cddcd18e"
+      ],
+      "grouping_rationale": "Distinct dated corporate event or annual outcome; original plan and later outcomes remain separate entries.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2025-09",
+          "precision": "month",
+          "basis": "Month explicitly stated in saved source quotation.",
+          "evidence_refs": [
+            "alphabet2025supplement:5470934a3422bbffe7bbca62de320b7056e253c387769bb3678668f5cddcd18e"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Fine, charge, appeal and bank guarantee are separate dated facts; do not invent an FX conversion or classify the charge as cash paid.",
+        "Appeal unresolved in the historical source; no current legal verdict is implied.",
+        "This EC matter is distinct from the US adtech mixed ruling/remedies and from Search litigation."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Quoted source and full page reviewed; interpretation remains proposed, with no individual attribution."
+        }
+      ]
+    },
+    {
+      "id": "revenue-fy2021",
+      "economic_id": "revenue-fy2021",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2021 revenue of $257.6B, up 41%",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2021:0629f1198af7c4141989d7d984552ecdf39e0458852e7ce5721915207cb554b5"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": "alphabet.revenue.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "257.6",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "label": "FY2021",
+          "basis": "Calendar fiscal-year measurement in the source.",
+          "evidence_refs": [
+            "alphabet2021:0629f1198af7c4141989d7d984552ecdf39e0458852e7ce5721915207cb554b5"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "The source attributes part of the growth comparison to COVID-19 affecting 2020 advertising revenue. Revenue growth alone is not efficiency or individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "sustainable-choices-2022-commitment",
+      "economic_id": "sustainable-choices-2022-commitment",
+      "kind": "promise",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Commitment to help 1 billion people make more sustainable choices by end 2022",
+      "dimension": "delivery_credibility",
+      "evidence_refs": [
+        "alphabet2021:a3d623d8c32e62b6998ee365a5aa8b0f527ca7958254c7c927b3a3ee6754ab18"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": {
+          "value": "2022-12-31",
+          "precision": "day",
+          "basis": "The source explicitly says by the end of 2022; the year end is December 31 for this calendar-year commitment.",
+          "evidence_refs": [
+            "alphabet2021:a3d623d8c32e62b6998ee365a5aa8b0f527ca7958254c7c927b3a3ee6754ab18"
+          ]
+        },
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [
+        "alphabet2021:6e1f94beba65b20bd093b792ea74488bb808bd7ec747cbb7351d03fa27fdecf8"
+      ],
+      "limitations": [
+        "The original statement date and operational definition of help/more sustainable choices remain unresolved.",
+        "No matched impact outcome is curated from these annual reports; that is not evidence of a missed goal."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "water-goal-reported-2021",
+      "economic_id": "water-goal-reported-2021",
+      "kind": "context",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2021 source discloses a goal to replenish more water than consumed by 2030",
+      "dimension": "disclosure_accountability",
+      "evidence_refs": [
+        "alphabet2021:cfc408f6c5107e75c08ef95bb127660c6dbd7689d96e7fc81e5c9f9e6e72375e"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": {
+          "value": "2030",
+          "precision": "year",
+          "basis": "By 2030 is stated; no exact completion day is invented.",
+          "evidence_refs": [
+            "alphabet2021:cfc408f6c5107e75c08ef95bb127660c6dbd7689d96e7fc81e5c9f9e6e72375e"
+          ]
+        },
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Reported goal retains its wording; scope, measure, original statement date and related later wording need review before treating another statement as a revision."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "revenue-fy2022",
+      "economic_id": "revenue-fy2022",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2022 revenue $282.8B, up10%",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2022and2023:a67136a8f682d386be88fc2b7dbbbdedcbae0507d4f847a56989248457daf808"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": "alphabet.revenue.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "282.8",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "label": "FY2022",
+          "basis": "Calendar fiscal-year measurement in the source.",
+          "evidence_refs": [
+            "alphabet2022and2023:a67136a8f682d386be88fc2b7dbbbdedcbae0507d4f847a56989248457daf808"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Revenue is company context, not proof of efficiency or individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "revenue-fy2023",
+      "economic_id": "revenue-fy2023",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2023 revenue $307.4B, up9%",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2022and2023:815b2e8c71fd4334deee628256859e9a9f2fafd6413b61ac12665f8323b0333a"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": "alphabet.revenue.v1",
+      "value": {
+        "operator": "eq",
+        "amount": "307.4",
+        "upper": null,
+        "tolerance": null
+      },
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "label": "FY2023",
+          "basis": "Calendar fiscal-year measurement in the source.",
+          "evidence_refs": [
+            "alphabet2022and2023:815b2e8c71fd4334deee628256859e9a9f2fafd6413b61ac12665f8323b0333a"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Revenue is company context, not proof of efficiency or individual contribution."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "depreciation-estimate-2023",
+      "economic_id": "depreciation-estimate-2023",
+      "kind": "decision",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Longer server/network useful lives reduced FY2023 depreciation expense by $3.9B",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2022and2023:caeb9aba277af0ca9512433a0a2c81f4e884b78bb1302a42cfeef4227d397bb9"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2023-01",
+          "precision": "month",
+          "basis": "Event date stated in the quoted source; publication and statement dates remain distinct.",
+          "evidence_refs": [
+            "alphabet2022and2023:caeb9aba277af0ca9512433a0a2c81f4e884b78bb1302a42cfeef4227d397bb9"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "label": "FY2023",
+          "basis": "Calendar fiscal-year measurement in the source.",
+          "evidence_refs": [
+            "alphabet2022and2023:caeb9aba277af0ca9512433a0a2c81f4e884b78bb1302a42cfeef4227d397bb9"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "company",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "An accounting estimate change affects expense timing; it is not an equivalent cash saving or evidence of misconduct."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "mandiant-close-2022",
+      "economic_id": "mandiant-close-2022",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Mandiant acquisition closed September 12,2022 for $6.1B",
+      "dimension": "capital_stewardship",
+      "evidence_refs": [
+        "alphabet2022and2023:c39355501ef6e13ecc655513cc8017388cfecaa86a9c64bdf6f14838ba0f8fd4"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2022-09-12",
+          "precision": "day",
+          "basis": "Event date stated in the quoted source; publication and statement dates remain distinct.",
+          "evidence_refs": [
+            "alphabet2022and2023:c39355501ef6e13ecc655513cc8017388cfecaa86a9c64bdf6f14838ba0f8fd4"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Completion and purchase price do not establish synergies or investment returns. Acquired operations change Google Cloud segment scope."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "workforce-announcement-2023",
+      "economic_id": "workforce-announcement-2023",
+      "kind": "decision",
+      "change": "original",
+      "supersedes": null,
+      "summary": "Workforce reduction announced in January 2023",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2022and2023:6e6f3d5fb9aef35c7485577f5dbac90f471599070e26b03c57ea6eeda51185a6"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": {
+          "value": "2023-01",
+          "precision": "month",
+          "basis": "Event date stated in the quoted source; publication and statement dates remain distinct.",
+          "evidence_refs": [
+            "alphabet2022and2023:6e6f3d5fb9aef35c7485577f5dbac90f471599070e26b03c57ea6eeda51185a6"
+          ]
+        },
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": null
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "company",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "No exact January day or headcount is inferred from this quotation."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    },
+    {
+      "id": "severance-fy2023",
+      "economic_id": "severance-fy2023",
+      "kind": "outcome",
+      "change": "original",
+      "supersedes": null,
+      "summary": "FY2023 employee severance and related charges of $2.1B",
+      "dimension": "operating_efficiency",
+      "evidence_refs": [
+        "alphabet2022and2023:6e6f3d5fb9aef35c7485577f5dbac90f471599070e26b03c57ea6eeda51185a6"
+      ],
+      "grouping_rationale": "Distinct economic event or full-year measurement; identical topics across different fiscal years are not merged.",
+      "metric_id": null,
+      "value": null,
+      "dates": {
+        "statement": null,
+        "event": null,
+        "completion": null,
+        "first_disclosure": null,
+        "target_deadline": null,
+        "measurement_period": {
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "label": "FY2023",
+          "basis": "Calendar fiscal-year measurement in the source.",
+          "evidence_refs": [
+            "alphabet2022and2023:6e6f3d5fb9aef35c7485577f5dbac90f471599070e26b03c57ea6eeda51185a6"
+          ]
+        }
+      },
+      "actors": {
+        "outcome_entity": "Alphabet Inc.",
+        "statement_by": "Alphabet Inc.",
+        "decision_by": "not_applicable",
+        "individuals": []
+      },
+      "conditions": [],
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Full-year charge, not a January cash payment or demonstrated savings."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Explicit quotation and saved page reviewed; no human approval or individual causation asserted."
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "dividend-intent-vs-past-payments",
+      "promise_id": "future-dividend-intention",
+      "outcome_id": "dividends-fy2024",
+      "rationale": "Retained rejected candidate: FY2024 distributions cannot fulfill a discretionary future dividend intention.",
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Included to document why this tempting association is not a delivery match."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Retained rejected candidate: FY2024 distributions cannot fulfill a discretionary future dividend intention."
+        }
+      ]
+    },
+    {
+      "id": "authorization-vs-repurchases",
+      "promise_id": "april-2024-buyback-authorization",
+      "outcome_id": "repurchases-fy2024",
+      "rationale": "Retained rejected candidate: authorization ceiling and fiscal-year cash repurchases are different metrics and periods of decision activity.",
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Included to document why this tempting association is not a delivery match."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex offline curation",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Retained rejected candidate: authorization ceiling and fiscal-year cash repurchases are different metrics and periods of decision activity."
+        }
+      ]
+    },
+    {
+      "id": "capex-2025-plan-vs-reported-spending",
+      "promise_id": "capex-2025-plan",
+      "outcome_id": "capex-fy2025-outcome",
+      "rationale": "Same company and fiscal year make this a candidate comparison, but the plan lacks an explicit accounting basis and approximate tolerance. The separately defined reported-spending metric is not silently made equivalent.",
+      "contrary_evidence_refs": [],
+      "limitations": [
+        "Guidance revisions between the April letter and year end have not been reconstructed. More spending is not automatically better delivery or a good return."
+      ],
+      "review_history": [
+        {
+          "status": "proposed",
+          "reviewer": "Codex source review",
+          "reviewer_type": "automated",
+          "at": "2026-09-30",
+          "rationale": "Retain original target and reported outcome with the unmatched metric definition and unresolved review state."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Five-year annual-source expansion. Original v1 statements and limitations remain preserved on their entries.",
+    "Automated curation and presentation proposals require analyst review.",
+    "Annual reports alone do not recover every quarterly guidance revision or original disclosure.",
+    "Composite annual-report publication metadata remains agent-reported. In particular, the FY2025 discovery used an annual-meeting listing date; it is not accepted as the original statement or first-disclosure date.",
+    "One FY2025 legal passage is a separately labeled offline source supplement, retaining the appeal sentence missing from the rejected automated candidate.",
+    "FY2026 statements embedded in the FY2025 annual report remain in evidence, outside this completed-year timeline."
+  ]
+}
