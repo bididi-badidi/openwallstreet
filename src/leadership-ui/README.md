@@ -32,6 +32,6 @@ Rail anchors are for layout. Month-only evidence retains month precision; annual
 
 ## Verification
 
-See [THEME.md](THEME.md) for color and contrast checks. Unit tests cover geometry and thinning; Python presentation tests cover missing years, immutable citations, date roles, cutoff availability, separate dimensions and review-state boundaries. The [collection and verification report](../../docs/alphabet-five-year-collection.md) records the completed run and its limitations.
+See [THEME.md](THEME.md) for color and contrast checks. Unit tests cover geometry and thinning; Python presentation tests cover missing years, immutable citations, date roles, cutoff availability, separate dimensions and review-state boundaries. The [collection and verification report](../../docs/archive/alphabet/collection.md) records the completed run and its limitations.
 
 The current turn verified the desktop and 390px mobile interface in the in-app browser over a loopback-only preview server: navigation, interruption, source expansion, one settled card and no horizontal overflow. Reduced-motion logic and CSS are preserved; current-turn browser emulation of that setting is not claimed. The requested `/private/tmp/nebius-timeline-handoff-2026-09-30.md` was unavailable, so the existing project reference was retained.

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { Miniflare, convertV4MiniflareOptions } from "miniflare";
 import { receptionSession, hmac } from "../lib/reception-session";
 import { reception, boundaryViolation } from "../reception/service";
@@ -41,8 +41,8 @@ test("reception enforces capabilities and quotas against real D1", async (t) => 
   );
   try {
     const DB = await mf.getD1Database("DB");
-    for (const file of ["research/schema.sql", "reception/schema.sql"])
-      await DB.exec((await readFile(file, "utf8")).replace(/\n/g, " "));
+    for (const file of (await readdir("research/migrations")).filter(f => f.endsWith(".sql")).sort())
+      await DB.exec((await readFile(`research/migrations/${file}`, "utf8")).replace(/\n/g, " "));
     const sent: unknown[] = [];
     const env = {
       DB,

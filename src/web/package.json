@@ -41,12 +41,18 @@
     "research:deploy": "wrangler deploy --config research/wrangler.jsonc",
     "research:dry-run": "wrangler deploy --dry-run --config research/wrangler.jsonc",
     "research:test": "wrangler deploy --dry-run --config research/wrangler.jsonc --outdir .wrangler/research-test && node scripts/verify-research-runtime.mjs",
-    "test": "tsx --test tests/*.test.*",
+    "test": "node --import tsx --test tests/*.test.*",
     "deploy:dry-run": "wrangler deploy --dry-run --config dist/server/wrangler.json",
     "schema": "tsx scripts/export-schema.ts",
-    "sample:refresh": "tsx scripts/refresh-sample.ts"
+    "sample:refresh": "tsx scripts/refresh-sample.ts",
+    "build:preview": "CLOUDFLARE_ENV=preview vite build",
+    "check": "npm run types && npm run research:types && npm run typecheck && npm test && npm run research:test && npm run build && npm run deploy:dry-run"
   },
   "overrides": {
     "fflate": "0.8.3"
+  },
+  "engines": {
+    "node": ">=26 <27",
+    "npm": ">=11 <12"
   }
 }

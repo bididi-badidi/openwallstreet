@@ -79,7 +79,7 @@ The generated HTML is the initial ledger review surface. It uses native disclosu
 
 ```sh
 PYTHONPATH=src python3 -m unittest discover -s tests -v
-python3 scripts/check.py
+python3 scripts/check-repository.py
 ```
 
-Regressions cover the saved Alphabet duplicate/date/table issues, multiple outcome matching gates, revisions versus original goals, withdrawals, conflicting results, restatements, source cutoff leakage, approximate targets, unknown timing, immutable continuation, tampered evidence, source-page context, escaped HTML and output-directory refusal. They use synthetic inputs and saved local evidence; no test invokes paid model research.
+Regressions cover the Alphabet curation's duplicate/date/table contracts, multiple outcome matching gates, revisions versus original goals, withdrawals, conflicting results, restatements, source cutoff leakage, approximate targets, unknown timing, immutable continuation, tampered evidence, source-page context, escaped HTML and output-directory refusal. They use synthetic inputs and source snapshots, including a [self-contained curation fixture](../../tests/fixtures/README.md); no test invokes paid model research. Real company evidence revalidation still requires the original local corpus.

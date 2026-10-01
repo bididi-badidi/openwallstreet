@@ -14,18 +14,18 @@ The FY2021–FY2025 annual-report baseline is saved. The interface presents **15
 
 There are **386 accepted collector records**, plus **one separate offline source-review passage**. Quotation acceptance checks source presence, not semantic correctness, independence, promise fulfillment or review approval. Collector runs remain `partial` because they retain rejected quotations and metadata uncertainty even though all five reports had every chunk processed. There are 353 records outside normalized ledger curation. The remaining FY2024 review inventory proposes 65 groups for its 66 previously uncurated records; it does not approve or automatically import them.
 
-FY2021–2023 required recovery of obsolete or blocked issuer URLs. Exact replacement links were observed on issuer listings and checked with the existing bounded retriever. See [source recovery](alphabet-report-source-recovery.md). The failed initial attempts remain saved. The collector stayed on `gpt-5.6-luna` / `xhigh`, with its custom per-worker sandbox verified; no runtime-model, billing, account or security-setting change was made.
+FY2021–2023 required recovery of obsolete or blocked issuer URLs. Exact replacement links were observed on issuer listings and checked with the existing bounded retriever. See [source recovery](source-recovery.md). The failed initial attempts remain saved. The collector stayed on `gpt-5.6-luna` / `xhigh`, with its custom per-worker sandbox verified; no runtime-model, billing, account or security-setting change was made.
 
 The separate FY2025 legal passage includes an appeal sentence omitted by the rejected automated candidate. It was independently copied as a contiguous exact saved-page quotation into `data/derived/alphabet-source-supplement-v1`, with its origin explicitly retained. No rejected response was rewritten or quietly admitted as verified.
 
 ## Presentation and ledger
 
-- [UI and preview instructions](../src/leadership-ui/README.md)
-- [Versioned ledger](../data/derived/alphabet-five-year-v2/ledger.html)
-- [Ledger JSON](../data/derived/alphabet-five-year-v2/ledger.json)
-- [Reproducible presentation workflow](../src/credibility/PRESENTATION.md)
-- [Explicit milestone selection](../src/credibility/examples/alphabet-five-year-presentation.json)
-- [Machine-readable verification](../data/derived/alphabet-five-year-v2/verification.json)
+- [UI and preview instructions](../../../src/leadership-ui/README.md)
+- [Versioned ledger](../../../data/derived/alphabet-five-year-v2/ledger.html)
+- [Ledger JSON](../../../data/derived/alphabet-five-year-v2/ledger.json)
+- [Reproducible presentation workflow](../../../src/credibility/PRESENTATION.md)
+- [Explicit milestone selection](../../../src/credibility/examples/alphabet-five-year-presentation.json)
+- [Machine-readable verification](../../../data/derived/alphabet-five-year-v2/verification.json)
 
 The design uses off-white `#f7f6f2`, neutral gray cards/rail and charcoal `#27272a`. Four separate views cover delivery, disclosure/accountability, operating efficiency and capital stewardship. Year navigation, staged interruptible movement, keyboard navigation and existing reduced-motion behavior are retained. Quotes include original date precision, attribution support, contrary evidence and full saved pages for table headers. New presentation prose always remains proposed.
 

@@ -9,9 +9,7 @@ import unittest
 
 from credibility.ledger import LedgerError, bounds, build_ledger, main
 from credibility.ledger_report import render_html
-
-
-ROOT = Path(__file__).resolve().parents[1]
+from fixtures.alphabet_curation import build_alphabet_fixture
 
 
 def review(status='reviewed', at='2026-09-30'):
@@ -345,10 +343,10 @@ class LedgerTests(unittest.TestCase):
         self.assertFalse(parser.refs - parser.ids)
 
 
-class AlphabetRegressionTests(unittest.TestCase):
+class AlphabetCurationContractTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.result = build_ledger(ROOT / 'src/credibility/examples/alphabet-ledger-v1.json', '2026-09-30')
+        cls.result = build_alphabet_fixture()
         cls.entries = {entry['id']: entry for entry in cls.result['entries']}
 
     def test_three_dividend_claims_are_one_conditional_intention(self):

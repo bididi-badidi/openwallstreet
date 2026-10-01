@@ -23,7 +23,7 @@ The compiler first revalidates evidence hashes, source bytes, quote presence and
 
 Coverage is calculated from saved annual documents, accepted quotations and processed chunks. “Collected; review pending” means every document chunk was processed and at least one quotation survived; it does not mean exhaustive claim extraction or semantic approval. Rejected quotation counts, uncertain publication metadata and other collection gaps remain accessible. A missing-year warning appears beside the timeline.
 
-The remaining FY2024 extraction review is in `docs/alphabet-remaining-claims-review.json`. It is an inventory of proposed groups, not automatically approved ledger entries. Compound claims still require splitting before numeric matching. The selection reviews for earlier years and FY2025 similarly document candidate choices; source-linked ledger entries are the input to the actual presentation.
+The remaining FY2024 extraction review is in `docs/archive/alphabet/reviews/remaining-claims.json`. It is an inventory of proposed groups, not automatically approved ledger entries. Compound claims still require splitting before numeric matching. The selection reviews for earlier years and FY2025 similarly document candidate choices; source-linked ledger entries are the input to the actual presentation.
 
 ## Selection discipline
 

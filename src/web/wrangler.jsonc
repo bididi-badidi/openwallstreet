@@ -15,12 +15,48 @@
   "vars": {
     "NEBIUS_JOB_SERVICE_URL": ""
   },
-  "services": [{ "binding": "RESEARCH_SERVICE", "service": "wallstreet-research" }],
-  "secrets": { "required": ["NEBIUS_JOB_SERVICE_TOKEN", "RESEARCH_ACCESS_CODE"] },
+  "services": [
+    {
+      "binding": "RESEARCH_SERVICE",
+      "service": "wallstreet-research"
+    }
+  ],
+  "secrets": {
+    "required": [
+      "NEBIUS_JOB_SERVICE_TOKEN",
+      "RESEARCH_ACCESS_CODE"
+    ]
+  },
   "observability": {
     "enabled": true,
-    "logs": { "enabled": true, "head_sampling_rate": 1 },
-    "traces": { "enabled": true, "head_sampling_rate": 0.1 }
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.1
+    }
   },
-  "account_id": "2e7eb340166ebda1a90cc2ee6c589c52"
+  "account_id": "2e7eb340166ebda1a90cc2ee6c589c52",
+  "env": {
+    "preview": {
+      "name": "wallstreet-leadership-preview",
+      "vars": {
+        "NEBIUS_JOB_SERVICE_URL": ""
+      },
+      "services": [
+        {
+          "binding": "RESEARCH_SERVICE",
+          "service": "wallstreet-research-preview"
+        }
+      ],
+      "secrets": {
+        "required": [
+          "NEBIUS_JOB_SERVICE_TOKEN",
+          "RESEARCH_ACCESS_CODE"
+        ]
+      }
+    }
+  }
 }
