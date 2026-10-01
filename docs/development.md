@@ -34,6 +34,8 @@ PYTHONPATH=src python3 -m unittest discover -s tests
 python3 scripts/check-repository.py
 ```
 
+Python contract tests use [synthetic fixtures](../tests/fixtures/README.md), including the saved Alphabet curation scenario. A clean checkout needs no private local research corpus. Revalidating real company evidence is a separate offline operation using the original source files.
+
 If Wrangler regenerates tracked binding declarations, include intentional changes. Do not hand-edit them. Changes to either Wrangler environment must also pass `npm run build:preview` and the preview deployment dry run described in CI.
 
 ## Branching

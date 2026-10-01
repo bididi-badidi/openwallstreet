@@ -1,19 +1,15 @@
 """Protect source identity, date roles and missing-year disclosure in the UI view."""
 import copy
-import json
-from pathlib import Path
 import unittest
 
-from credibility.ledger import build_ledger, LedgerError
+from credibility.ledger import LedgerError
 from credibility.presentation import anchor, compile_presentation
-
-ROOT = Path(__file__).resolve().parents[1]
-
+from fixtures.alphabet_curation import build_alphabet_fixture
 
 class PresentationTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.original = build_ledger(ROOT / 'src/credibility/examples/alphabet-ledger-v1.json', '2026-09-30')
+        cls.original = build_alphabet_fixture()
 
     def setUp(self):
         self.ledger = copy.deepcopy(self.original)
