@@ -23,6 +23,7 @@ npm run dev
 - `components/ResearchWorkspace.tsx`: company input, submission, progress, polling, retry, and session recovery. Completed jobs open at `/research/{id}`.
 - `components/report/LeadershipReport.tsx`: the public report component. Pass a validated `LeadershipReport` object. Mount with a new React key when replacing a report to reset selection.
 - `AssessmentGrid`, `EvidenceTimeline`, `EventCard`, `Evidence`, and `CoverageDisclosure`: independently organized report sections. They consume `ReportProvider`; no company data is embedded in these components.
+- The timeline switches between Perspective and List while retaining the selected milestone. The list supports chronological scrolling, year shortcuts, and inline evidence. Content fades out before the shared rail morphs, then returns after the rail settles. Switching is interruptible; reduced motion changes views immediately. Motion settings live in `components/report/timeline-views.css`.
 - `lib/report-schema.ts`: TypeScript types and runtime validation for company input, reports, and asynchronous jobs.
 - `lib/job-service.ts`: server-only job-service integration. Only API handlers import it.
 - `data/alphabet.json`: a copy of the original compiled `../leadership-ui/evidence-model.json`, with a public ledger link and normalized scope punctuation. The original evidence files are unchanged.
@@ -98,3 +99,5 @@ The contact action opens a form. The visitor reviews it and presses **Send messa
 `/examples/alphabet` retains the existing curated leadership report. `/examples/microsoft` shows the completed paid-account run described above, with a downloadable public bundle containing source text and accepted claims. Full reports no longer appear on the homepage.
 
 UI release verification and screenshots: [qa/verification.md](qa/verification.md).
+
+Timeline view verification and screenshots: [qa/timeline-verification.md](qa/timeline-verification.md).

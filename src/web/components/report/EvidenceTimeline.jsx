@@ -11,6 +11,9 @@ import EventCard from "./EventCard";
 import { Evidence } from "./Evidence";
 import { Icon } from "./Icon";
 import { useReport } from "./ReportContext";
+import { TimelineViewSwitch } from "./TimelineViewSwitch";
+import { VerticalTimeline } from "./VerticalTimeline";
+import { useTimelineView } from "./useTimelineView";
 import {
   DAY_MS,
   PIXELS_PER_DAY,
@@ -108,6 +111,7 @@ export function EvidenceTimeline() {
   const model = useReport();
   const headingId = useId();
   const sourceId = useId();
+  const panelId = useId();
   const events = model.events;
   const { points, ticks, monthTicks } = useMemo(() => {
     const start = Date.parse(events[0].month + "-01T00:00:00Z");
@@ -133,6 +137,17 @@ export function EvidenceTimeline() {
   selectedRef.current = selected;
   const position = useMotionValue(-points[0]);
   const reduced = useReducedMotion();
+  const viewerHeight = Math.max(560, maxCardHeight + 170);
+  const viewState = useTimelineView(viewer, width, viewerHeight, reduced);
+  const {
+    view,
+    setView,
+    renderedView,
+    phase: viewPhase,
+    opacity,
+    rail,
+  } = viewState;
+  const interactive = viewPhase === "idle" || viewPhase === "fading-in";
   const visibleLabels = useTransform(position, (value) =>
     visibleMonthLabels(monthTicks, value, width),
   );
@@ -164,7 +179,11 @@ export function EvidenceTimeline() {
     let cancelled = false,
       pause;
     setExpanded(null);
-    if (reduced) {
+    if (
+      reduced ||
+      renderedView === "list" ||
+      Math.abs(position.get() + points[selected]) < 0.1
+    ) {
       position.jump(-points[selected]);
       setExpanded(selected);
       setPhase("expanded");
@@ -191,14 +210,17 @@ export function EvidenceTimeline() {
       clearTimeout(pause);
       controls.stop();
     };
-  }, [selected, reduced, position, points]);
+  }, [selected, reduced, position, points, renderedView]);
   useEffect(() => {
     const key = (e) => {
       if (
         e.altKey ||
         e.ctrlKey ||
         e.metaKey ||
-        e.target.closest("input,textarea,select,[contenteditable]")
+        e.target.closest(
+          "input,textarea,select,[contenteditable],[role=tablist]",
+        ) ||
+        renderedView === "list"
       )
         return;
       const delta = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
@@ -214,7 +236,7 @@ export function EvidenceTimeline() {
     const area = viewer.current.parentElement;
     area.addEventListener("keydown", key);
     return () => area.removeEventListener("keydown", key);
-  }, [select, events.length]);
+  }, [select, events.length, renderedView]);
   return (
     <section className="ws-story" aria-labelledby={headingId}>
       <div className="story-heading">
@@ -222,7 +244,16 @@ export function EvidenceTimeline() {
           <span className="eyebrow">THE DECISIONS. THE CONSEQUENCES.</span>
           <h2 id={headingId}>{model.title}</h2>
         </div>
-        <span className="story-count">{events.length} selected milestones</span>
+        <div className="story-heading-actions">
+          <span className="story-count">
+            {events.length} selected milestones
+          </span>
+          <TimelineViewSwitch
+            view={view}
+            onChange={setView}
+            panelId={panelId}
+          />
+        </div>
       </div>
       <p className="coverage-status">
         {model.coverage.filter((c) => c.status !== "collected; review pending")
@@ -236,12 +267,18 @@ export function EvidenceTimeline() {
       </p>
       <section
         ref={viewer}
+        id={panelId}
         className="viewer"
-        aria-label="Cinematic evidence timeline"
+        role="tabpanel"
+        aria-labelledby={`${panelId}-${view}`}
+        aria-busy={viewPhase !== "idle"}
         data-phase={phase}
+        data-view={renderedView}
+        data-view-target={view}
+        data-view-phase={viewPhase}
         data-selected={selectedEvent.id}
         style={{
-          "--viewer-height": `${Math.max(480, maxCardHeight + 170)}px`,
+          "--viewer-height": `${viewerHeight}px`,
           "--measured-card-width": `${Math.min(300, Math.max(210, width - 56))}px`,
         }}
       >
@@ -249,8 +286,13 @@ export function EvidenceTimeline() {
           {selectedEvent.date}. {selectedEvent.title}{" "}
           {expanded === selected ? selectedEvent.summary : ""}
         </p>
-        <div className="timeline-window">
-          <div className="rail-line" aria-hidden="true" />
+        <motion.div className="view-rail" style={rail} aria-hidden="true" />
+        <motion.div
+          className="timeline-window timeline-layer"
+          style={{ opacity: renderedView === "perspective" ? opacity : 0 }}
+          aria-hidden={renderedView !== "perspective" || !interactive}
+          inert={renderedView !== "perspective" || !interactive}
+        >
           <div className="projection-origin">
             <div className="tick-layer" aria-hidden="true">
               {ticks.map((t) => (
@@ -280,7 +322,23 @@ export function EvidenceTimeline() {
               />
             ))}
           </div>
-        </div>
+        </motion.div>
+        <motion.div
+          className="timeline-layer"
+          style={{ opacity: renderedView === "list" ? opacity : 0 }}
+          aria-hidden={renderedView !== "list" || !interactive}
+          inert={renderedView !== "list" || !interactive}
+        >
+          <VerticalTimeline
+            selected={selected}
+            select={select}
+            active={renderedView === "list"}
+            reduced={Boolean(reduced)}
+            open={sourcesOpen}
+            onOpenChange={setSourcesOpen}
+            idPrefix={panelId}
+          />
+        </motion.div>
       </section>
       <nav className="story-controls" aria-label="Timeline navigation">
         <motion.button
@@ -333,9 +391,15 @@ export function EvidenceTimeline() {
         })}
       </nav>
       <p className="story-hint">
-        Select a year or use the arrow keys · Proposed interpretation
+        {renderedView === "list"
+          ? "Scroll the list or choose a year. Open a milestone to inspect its evidence."
+          : "Select a year or use the arrow keys · Proposed interpretation"}
       </p>
-      <div className="event-evidence t-acc" data-open={sourcesOpen}>
+      <div
+        className="event-evidence t-acc"
+        data-open={sourcesOpen}
+        hidden={renderedView === "list"}
+      >
         <button
           className="evidence-trigger t-acc-head"
           type="button"

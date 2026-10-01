@@ -1,0 +1,298 @@
+/* Tabs sliding from transitions-dev; theme overrides follow the original snippet. */
+:root {
+  --tabs-dur: 250ms;
+  --tabs-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --tabs-text-muted: rgba(15, 15, 15, 0.8);
+  --tabs-text-active: #0f0f0f;
+  --tabs-bar-bg: #f1f1f1;
+  --tabs-pill-bg: #ffffff;
+}
+
+/* The bar is just a flex container with padding for the pill
+   to sit inside. Tabs sit on z-index: 1, the pill on z-index: 0,
+   so labels read above the pill background. */
+.t-tabs {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border-radius: 48px;
+  background: var(--tabs-bar-bg);
+}
+.t-tab {
+  position: relative;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  height: 30px;
+  padding: 4px 12px;
+  color: var(--tabs-text-muted);
+  cursor: pointer;
+  border-radius: 48px;
+  z-index: 1;
+  transition: color var(--tabs-dur) var(--tabs-ease);
+}
+.t-tab:not([aria-selected="true"]):hover,
+.t-tab[aria-selected="true"] {
+  color: var(--tabs-text-active);
+}
+
+/* The pill: width + transform are written inline by JS so
+   the transition tweens between the previous and next
+   measured positions. */
+.t-tabs-pill {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 30px;
+  width: 0;
+  background: var(--tabs-pill-bg);
+  border-radius: 48px;
+  transform: translateX(0);
+  transition:
+    transform var(--tabs-dur) var(--tabs-ease),
+    width     var(--tabs-dur) var(--tabs-ease);
+  will-change: transform, width;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .t-tabs-pill, .t-tab { transition: none !important; }
+}
+
+.leadership-report {
+  --timeline-fade-out: 150ms;
+  --timeline-line-response: 500ms;
+  --timeline-fade-in: 250ms;
+  --timeline-list-inset: 48px;
+}
+.leadership-report .story-heading-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.leadership-report .timeline-view-switch {
+  --tabs-bar-bg: var(--ws-soft);
+  --tabs-pill-bg: var(--ws-bg);
+  --tabs-text-muted: var(--ws-secondary);
+  --tabs-text-active: var(--ws-ink);
+  flex-shrink: 0;
+}
+.leadership-report .timeline-view-switch .t-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 44px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--tabs-text-muted);
+}
+.leadership-report .timeline-view-switch .t-tab[aria-selected="true"] {
+  color: var(--tabs-text-active);
+}
+.leadership-report .timeline-view-switch .t-tab:active {
+  background: var(--ws-pressed);
+}
+.leadership-report .timeline-view-switch .t-tabs-pill {
+  height: 44px;
+  box-shadow: 0 1px 3px #27272a0a;
+}
+.leadership-report .view-rail {
+  position: absolute;
+  left: -0.5px;
+  top: -0.5px;
+  width: 1px;
+  height: 1px;
+  transform-origin: center;
+  background: var(--ws-rail);
+  pointer-events: none;
+}
+.leadership-report .timeline-layer {
+  position: absolute;
+  inset: 0;
+}
+.leadership-report .viewer[data-view-phase="morphing"] .view-rail {
+  will-change: transform;
+}
+.leadership-report .viewer:not([data-view-phase="idle"]) .timeline-layer {
+  will-change: opacity;
+}
+.leadership-report .vertical-timeline-scroll {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  overflow-anchor: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ws-line) transparent;
+  padding: 24px 32px 32px 88px;
+}
+.leadership-report .vertical-timeline-scroll:focus-visible {
+  outline: 2px solid var(--ws-accent);
+  outline-offset: -3px;
+}
+.leadership-report .vertical-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.leadership-report .vertical-milestone {
+  position: relative;
+  padding-bottom: 18px;
+}
+.leadership-report .vertical-milestone:last-child {
+  padding-bottom: 0;
+}
+.leadership-report .vertical-milestone-dot {
+  position: absolute;
+  top: 37px;
+  left: -40px;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ws-secondary);
+  box-shadow: 0 0 0 5px var(--ws-bg);
+}
+.leadership-report .vertical-milestone[data-selected="true"] .vertical-milestone-dot {
+  background: var(--accent, #e66b50);
+  box-shadow: 0 0 0 5px var(--ws-bg), 0 0 0 6px var(--ws-line);
+}
+.leadership-report .vertical-milestone-card {
+  background: var(--ws-surface);
+  border: 1px solid var(--ws-line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.leadership-report .vertical-milestone[data-selected="true"] .vertical-milestone-card {
+  border-color: #aaa8a2;
+}
+.leadership-report .vertical-milestone-button {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 22px;
+  border: 0;
+  border-radius: 17px;
+  background: transparent;
+  text-align: left;
+}
+.leadership-report .vertical-milestone-button:hover {
+  background: #e7e6e24d;
+}
+.leadership-report .vertical-milestone-button:focus-visible {
+  outline-offset: -3px;
+}
+.leadership-report .vertical-milestone-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--ws-soft);
+  color: var(--ws-accent);
+  text-align: center;
+}
+.leadership-report .vertical-milestone-copy {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+.leadership-report .vertical-milestone-tile .tile-value {
+  max-width: 100%;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.leadership-report .vertical-milestone-tile .tile-label {
+  max-width: 100%;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.leadership-report .vertical-milestone-date {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: 550;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+.leadership-report .vertical-milestone-date > span {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  color: var(--ws-secondary);
+}
+.leadership-report .vertical-milestone-title {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+.leadership-report .vertical-milestone-summary {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8125rem;
+  color: var(--ws-secondary);
+  line-height: 1.6;
+}
+.leadership-report .vertical-milestone-source {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  color: var(--ws-secondary);
+  font-size: 0.6875rem;
+}
+.leadership-report .vertical-milestone-source .ws-icon {
+  width: 14px;
+  height: 14px;
+  flex-basis: 14px;
+}
+.leadership-report .vertical-milestone-source .t-acc-chevron {
+  margin-left: auto;
+}
+.leadership-report .vertical-milestone-evidence {
+  padding: 0 22px 8px;
+}
+@media (max-width: 640px) {
+  .leadership-report { --timeline-list-inset: 26px; }
+  .leadership-report .story-heading-actions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .leadership-report .vertical-timeline-scroll { padding: 24px 16px 28px 50px; }
+  .leadership-report .vertical-milestone-dot { left: -24px; top: 34px; }
+  .leadership-report .vertical-milestone-button { display: grid; grid-template-columns: 56px minmax(0,1fr); padding: 16px; gap: 12px; }
+  .leadership-report .vertical-milestone-tile { width: 56px; height: 56px; }
+  .leadership-report .vertical-milestone-tile .tile-value { font-size: 0.875rem; }
+  .leadership-report .vertical-milestone-tile .tile-label { font-size: 0.5rem; }
+  .leadership-report .vertical-milestone-copy { display: contents; }
+  .leadership-report .vertical-milestone-date { align-self: center; }
+  .leadership-report .vertical-milestone-title, .leadership-report .vertical-milestone-summary, .leadership-report .vertical-milestone-source { grid-column: 1 / -1; margin-top: 0; }
+  .leadership-report .vertical-milestone-title { font-size: 1rem; }
+  .leadership-report .vertical-milestone-evidence { padding: 0 16px 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .leadership-report .view-rail, .leadership-report .timeline-layer { will-change: auto !important; }
+}
+@media (prefers-contrast: more) {
+  .leadership-report .vertical-milestone-card { border-color: var(--ws-ink); }
+}
