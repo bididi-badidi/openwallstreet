@@ -1,0 +1,177 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Deployment environment (production requires main)
+        type: choice
+        options: [preview, production]
+        default: preview
+        required: true
+
+permissions:
+  contents: read
+
+env:
+  CI: true
+  WRANGLER_SEND_METRICS: false
+
+jobs:
+  web:
+    name: Web checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: src/web
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: src/web/package-lock.json
+      - run: npm install --global npm@11.12.1
+      - run: npm ci
+      - run: npm run check
+      - name: Check preview build and research bundle
+        run: |
+          npm run build:preview
+          DEPLOY_ENVIRONMENT=preview node scripts/configure-deployment.mjs --verify-build
+          npm run deploy:dry-run
+          npx wrangler deploy --dry-run --config research/wrangler.jsonc --env preview
+
+  python:
+    name: Python checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Collector tests
+        run: python -m unittest discover -s tests
+        env:
+          PYTHONPATH: src
+      - name: Repository hygiene and documentation links
+        run: python scripts/check-repository.py
+      - name: Validate GitHub Actions workflows
+        run: |
+          cd "$RUNNER_TEMP"
+          curl --fail --silent --show-error --location --retry 3 -o actionlint.tgz \
+            https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz
+          echo '8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  actionlint.tgz' | sha256sum -c -
+          tar -xzf actionlint.tgz actionlint
+          cd "$GITHUB_WORKSPACE"
+          "$RUNNER_TEMP/actionlint"
+
+  secrets:
+    name: Secret scan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Scan Git history
+        run: |
+          cd "$RUNNER_TEMP"
+          curl --fail --silent --show-error --location --retry 3 -o gitleaks.tgz \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.28.0/gitleaks_8.28.0_linux_x64.tar.gz
+          echo 'a65b5253807a68ac0cafa4414031fd740aeb55f54fb7e55f386acb52e6a840eb  gitleaks.tgz' | sha256sum -c -
+          tar -xzf gitleaks.tgz gitleaks
+          ./gitleaks git --redact --exit-code 1 "$GITHUB_WORKSPACE"
+
+  ready:
+    name: Ready
+    if: always()
+    needs: [web, python, secrets]
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Require every check
+        env:
+          WEB: ${{ needs.web.result }}
+          PYTHON: ${{ needs.python.result }}
+          SECRETS: ${{ needs.secrets.result }}
+        run: test "$WEB" = success && test "$PYTHON" = success && test "$SECRETS" = success
+
+  deploy:
+    name: Deploy
+    needs: ready
+    if: >-
+      vars.DEPLOYMENTS_ENABLED == 'true' &&
+      ((github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_dispatch' &&
+      (inputs.environment == 'preview' || github.ref == 'refs/heads/main')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: ${{ github.event_name == 'push' && 'production' || inputs.environment }}
+      url: ${{ vars.DEPLOY_URL }}
+    concurrency:
+      group: deploy-${{ github.event_name == 'push' && 'production' || inputs.environment }}
+      cancel-in-progress: false
+    defaults:
+      run:
+        working-directory: src/web
+    env:
+      DEPLOY_ENVIRONMENT: ${{ github.event_name == 'push' && 'production' || inputs.environment }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_D1_DATABASE_ID: ${{ vars.CLOUDFLARE_D1_DATABASE_ID }}
+      DEPLOY_URL: ${{ vars.DEPLOY_URL }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: src/web/package-lock.json
+      - run: npm install --global npm@11.12.1
+      - run: npm ci
+      - name: Configure target and build
+        env:
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          test -n "$DEPLOY_URL"
+          if [ "$DEPLOY_ENVIRONMENT" = production ]; then
+            git fetch --no-tags origin main
+            test "$(git rev-parse FETCH_HEAD)" = "$RELEASE_COMMIT"
+          fi
+          node scripts/configure-deployment.mjs
+          if [ "$DEPLOY_ENVIRONMENT" = preview ]; then
+            npm run build:preview
+          else
+            npm run build
+          fi
+          node scripts/configure-deployment.mjs --verify-build
+      - name: Migrate database, deploy research, then deploy web
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN"
+          args=(--config research/wrangler.jsonc)
+          if [ "$DEPLOY_ENVIRONMENT" = preview ]; then args+=(--env preview); fi
+          npx wrangler d1 migrations apply DB --remote "${args[@]}"
+          npx wrangler deploy "${args[@]}"
+          npx wrangler deploy --config dist/server/wrangler.json
+      - name: Check deployed site without spending provider credits
+        run: node scripts/smoke-deployment.mjs
+      - name: Record release
+        env:
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          echo "Deployed $RELEASE_COMMIT to $DEPLOY_ENVIRONMENT: $DEPLOY_URL" >> "$GITHUB_STEP_SUMMARY"

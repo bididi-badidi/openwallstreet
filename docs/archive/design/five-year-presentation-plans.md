@@ -85,4 +85,4 @@ Implementation can add a versioned presentation-selection file over the existing
 
 Complete the annual-report coverage for the selected five fiscal years, then follow material original statements to their revisions and comparable outcomes. Earlier sources may be required for promises originating before the window. Add quarterly, proxy or other primary evidence where an annual report cannot resolve timing, governance responsibility or an outcome. Keep source coverage distinct from assessment direction.
 
-This proposal does not launch collection or infer the missing years. The existing [ledger contract](../src/credibility/LEDGER.md) and [presentation direction](../data/live-alphabet-2024/presentation-direction.md) supply the evidence, date, attribution and review requirements.
+This proposal does not launch collection or infer the missing years. The existing [ledger contract](../../../src/credibility/LEDGER.md) and [presentation direction](../../../data/live-alphabet-2024/presentation-direction.md) supply the evidence, date, attribution and review requirements.

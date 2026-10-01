@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { Miniflare, Response, convertV4MiniflareOptions } from "miniflare";
 
 // Exercise real Workflows and D1 in workerd; external providers are deterministic.
@@ -161,8 +161,8 @@ const mf = new Miniflare(
 );
 try {
   const db = await mf.getD1Database("DB");
-  for (const file of ["research/schema.sql", "reception/schema.sql"])
-    await db.exec((await readFile(file, "utf8")).replace(/\n/g, " "));
+  for (const file of (await readdir("research/migrations")).filter(f => f.endsWith(".sql")).sort())
+    await db.exec((await readFile(`research/migrations/${file}`, "utf8")).replace(/\n/g, " "));
   const request = (path, init = {}) =>
     mf.dispatchFetch("https://research.internal" + path, {
       ...init,

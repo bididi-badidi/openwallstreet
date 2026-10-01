@@ -4,15 +4,106 @@
   "account_id": "2e7eb340166ebda1a90cc2ee6c589c52",
   "main": "index.ts",
   "compatibility_date": "2026-10-01",
-  "compatibility_flags": ["nodejs_compat"],
-  "limits": { "cpu_ms": 30000 },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "limits": {
+    "cpu_ms": 30000
+  },
   "workers_dev": false,
   "preview_urls": false,
-  "workflows": [{ "binding": "RESEARCH_WORKFLOW", "name": "wallstreet-research-workflow", "class_name": "ResearchWorkflow" }],
-  "d1_databases": [{ "binding": "DB", "database_name": "wallstreet-research", "database_id": "168e086c-75bf-4feb-bbd3-90c44ba6bf16" }],
-  "vars": { "NEBIUS_MODEL": "nvidia/nemotron-3-super-120b-a12b", "MAX_DAILY_JOBS": "10", "MAX_ACTIVE_JOBS": "2", "RECEPTION_FROM": "reception@openwallstreet.zishenchan.com" },
-  "send_email": [{ "name": "RECEPTION_EMAIL", "allowed_destination_addresses": ["contact@zishenchan.com"], "allowed_sender_addresses": ["reception@openwallstreet.zishenchan.com"] }],
-  "secrets": { "required": ["NEBIUS_API_KEY", "TAVILY_API_KEY", "NEBIUS_JOB_SERVICE_TOKEN"] },
-  "triggers": { "crons": ["17 * * * *"] },
-  "observability": { "enabled": true, "logs": { "enabled": true, "head_sampling_rate": 1 }, "traces": { "enabled": true, "head_sampling_rate": 0.1 } }
+  "workflows": [
+    {
+      "binding": "RESEARCH_WORKFLOW",
+      "name": "wallstreet-research-workflow",
+      "class_name": "ResearchWorkflow"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wallstreet-research",
+      "database_id": "168e086c-75bf-4feb-bbd3-90c44ba6bf16",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "NEBIUS_MODEL": "nvidia/nemotron-3-super-120b-a12b",
+    "MAX_DAILY_JOBS": "10",
+    "MAX_ACTIVE_JOBS": "2",
+    "RECEPTION_FROM": "reception@openwallstreet.zishenchan.com"
+  },
+  "send_email": [
+    {
+      "name": "RECEPTION_EMAIL",
+      "allowed_destination_addresses": [
+        "contact@zishenchan.com"
+      ],
+      "allowed_sender_addresses": [
+        "reception@openwallstreet.zishenchan.com"
+      ]
+    }
+  ],
+  "secrets": {
+    "required": [
+      "NEBIUS_API_KEY",
+      "TAVILY_API_KEY",
+      "NEBIUS_JOB_SERVICE_TOKEN"
+    ]
+  },
+  "triggers": {
+    "crons": [
+      "17 * * * *"
+    ]
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.1
+    }
+  },
+  "env": {
+    "preview": {
+      "name": "wallstreet-research-preview",
+      "workflows": [
+        {
+          "binding": "RESEARCH_WORKFLOW",
+          "name": "wallstreet-research-workflow-preview",
+          "class_name": "ResearchWorkflow"
+        }
+      ],
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "wallstreet-research-preview",
+          "database_id": "00000000-0000-0000-0000-000000000000",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "vars": {
+        "NEBIUS_MODEL": "nvidia/nemotron-3-super-120b-a12b",
+        "MAX_DAILY_JOBS": "3",
+        "MAX_ACTIVE_JOBS": "1",
+        "RECEPTION_FROM": ""
+      },
+      "send_email": [],
+      "secrets": {
+        "required": [
+          "NEBIUS_API_KEY",
+          "TAVILY_API_KEY",
+          "NEBIUS_JOB_SERVICE_TOKEN"
+        ]
+      },
+      "triggers": {
+        "crons": [
+          "17 * * * *"
+        ]
+      }
+    }
+  }
 }

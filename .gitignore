@@ -47,3 +47,26 @@ coverage/
 TASKS.md
 MEMORY.md
 .claude/worktrees/
+
+# Local research and scratch outputs (curated public samples live in src/web).
+/data/*
+!/data/README.md
+/artifacts/
+
+# Locally retained upstream references and assistant tooling, not app source.
+/plugins/
+/managed-agent-cookbooks/
+/claude-for-msft-365-install/
+/.claude-plugin/
+/.claude/
+/.agents/
+/.githooks/
+/CLAUDE.md
+/skills-lock.json
+
+# Runtime state and credentials at any depth.
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+*.tsbuildinfo

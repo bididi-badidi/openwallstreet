@@ -1,3 +1,5 @@
+> Original October 1 proposal. Git, application, and CI/CD have since changed. Use the [current guides](../README.md) for setup and status.
+
 # Hackathon readiness proposal
 
 Reviewed October 1, 2026. This is a proposed implementation sequence, not a record of completed infrastructure work. The exact event, submission deadline, team size, and destination GitHub repository are still to be confirmed.
