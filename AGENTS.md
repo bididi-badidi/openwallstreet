@@ -12,3 +12,7 @@ OpenWallstreet collects primary-source annual-report evidence. The deployed app 
 - Preserve source restrictions, quotation checks, provenance, and coverage disclosures. Do not label saved examples as live or infer management credibility from quotation counts.
 - Run relevant checks from the [development guide](docs/development.md). For deployment/configuration changes, verify both environments and follow [deployment](docs/deployment.md). Add SQL changes as new migrations; do not edit applied migrations.
 - Keep this file concise. Put detailed guidance in the [documentation index](docs/README.md), and update the relevant guide when behavior changes.
+
+## Cursor Cloud specific instructions
+
+Cloud Agent shells can resolve `node` to an older runtime earlier on `PATH`. Prefix web commands with `export PATH="/usr/local/bin:$PATH"` so Node 26.0.0 and npm 11.12.1 are used. Saved examples work without provider credentials and are served on port 5173. Python 3.12 checks are in [development](docs/development.md).
